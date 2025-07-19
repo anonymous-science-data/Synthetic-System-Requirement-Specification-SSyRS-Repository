@@ -1,0 +1,99 @@
+
+E-Commerce System Scenario: "ArtisanConnect Marketplace"
+1. System Overview
+System Purpose:
+"ArtisanConnect Marketplace" is a digital platform designed to empower independent artisans and small-scale craftspeople by providing an online marketplace for their handmade, custom, and limited-edition products. The platform's goal is to bridge the gap between artisans and customers who value unique, high-quality, and ethically sourced goods, fostering a community-driven shopping experience.
+
+Domain/Context:
+E-commerce with a focus on handmade and custom artisanal goods.
+
+Stakeholders:
+
+Artisans: Independent creators and small workshops seeking to expand their reach and sell products online.
+Customers: Discerning shoppers looking for unique, high-quality, and ethically made products.
+Marketplace Administrators: Platform managers responsible for vendor approval, dispute resolution, and system oversight.
+Logistics Partners: Regional delivery services ensuring timely and safe product delivery.
+User Base Characteristics:
+
+Size: Expected to support 1,000 artisans and 100,000 monthly active customers at launch, with a target of 500,000 customers in two years.
+Diversity: Artisans range from solo craftspeople to small workshops, while customers include collectors, interior designers, and conscious consumers.
+Geographic Distribution: Initial rollout in North America, with planned expansions to Europe and Asia.
+Roles:
+Customers (browsers, purchasers, and reviewers).
+Artisans (product listers, inventory managers, and order fulfillers).
+Administrators (system managers, dispute handlers, and vendor verifiers).
+Operational Environment:
+The platform will be hosted on a cloud-based infrastructure to ensure scalability and global availability. Customers and artisans will access the system via a responsive web application and native mobile apps for iOS and Android.
+
+Usage Scenarios:
+
+A customer browses a category for handmade jewelry, selects an item, and completes the checkout process.
+An artisan lists a new collection of custom furniture, updates stock availability, and tracks orders.
+An administrator reviews flagged reviews and mediates disputes between a customer and an artisan.
+2. Functional Requirements
+Core Features:
+
+Artisan Management: Artisans can create profiles, list products, and manage inventory.
+Product Catalog: Searchable and filterable product listings with options for custom orders.
+Checkout and Payments: Multi-item carts, integrated payment gateways, and support for multiple currencies.
+Order Fulfillment: Tools for tracking and managing shipping logistics, including integrations with local couriers.
+Community Features: Customer reviews, artisan blogs, and Q&A sections for customer-artisan interaction.
+Administrator Tools: Vendor onboarding workflows, fraud detection alerts, and dispute management dashboards.
+Authentication Conditions & Frequency:
+
+Customers authenticate at the beginning of a session, with re-authentication required after 60 minutes of inactivity or when performing sensitive actions, such as viewing order history or changing payment details.
+Artisans authenticate once per session, with additional authentication for high-sensitivity actions like bank detail updates or withdrawing funds.
+Administrators re-authenticate every 90 minutes or when accessing sensitive vendor or financial data.
+Sensitivity of Actions & Permission Levels:
+
+High Sensitivity: Modifying payment information (customers), withdrawing funds (artisans), or accessing user data logs (administrators).
+Medium Sensitivity: Managing inventory (artisans) or viewing order details (customers).
+Low Sensitivity: Browsing products or viewing non-sensitive metrics.
+3. Non-Functional Requirements
+Performance:
+
+Page load times must not exceed 2 seconds for 95% of user interactions.
+The system must handle 15,000 concurrent users during peak sales periods.
+Scalability:
+
+Support for 2 million product listings within three years.
+Auto-scaling infrastructure to manage demand spikes during holiday seasons or artisan-led promotional events.
+Reliability:
+
+Ensure 99.95% uptime SLA.
+Redundant cloud architecture with automated failover for critical services.
+Security:
+
+End-to-end encryption for all transactions and sensitive data.
+Role-based access control to restrict unauthorized access to administrative tools.
+Usability:
+
+Mobile-first design with a focus on simplicity for both artisans and customers.
+Accessibility compliance (e.g., WCAG 2.1) for users with disabilities.
+Audit & Monitoring:
+
+Logging of all sensitive actions, including payments, withdrawals, and account modifications.
+Monthly reports for artisan performance, customer engagement, and system health.
+4. Constraints
+Technical Constraints:
+
+Dependency on third-party APIs for payment processing and logistics integrations.
+Use of cloud-based microservices architecture, which may limit cross-regional data synchronization.
+Compliance Requirements:
+
+GDPR compliance for international operations.
+Adherence to FTC guidelines for transparent online business practices.
+Resource Constraints:
+
+Initial development budget of $2.5 million and an annual operational budget of $600,000.
+A team of 25 developers, 7 designers, and 12 quality assurance specialists for a 14-month development cycle.
+Integration Needs:
+
+Compatibility with CRM tools for artisan-customer communication.
+APIs for third-party marketing platforms, such as Google Ads and Instagram Shopping.
+This scenario outlines a robust and realistic implementation of an e-commerce system tailored to the needs of artisans and their customers. It balances business objectives, user experience, and technical feasibility while addressing industry-specific challenges.
+
+
+
+
+

@@ -1,0 +1,82 @@
+
+E-commerce System Scenario
+1. System Overview
+System Purpose:
+The system aims to create a marketplace that connects eco-conscious consumers with sustainable and ethical product vendors. The platform provides tools for sellers to promote eco-friendly goods and offers consumers resources to track the environmental impact of their purchases.
+
+Domain/Context:
+E-commerce sector focusing on sustainable and ethical products, promoting environmental and social responsibility in consumer purchasing habits.
+
+Stakeholders:
+
+Customers: Individuals seeking eco-friendly and ethically sourced products.
+Sellers: Businesses or artisans producing sustainable goods.
+Environmental Advocacy Groups: Collaborate with the platform to verify claims and promote awareness.
+Administrators: Manage platform operations and maintain compliance.
+User Base Characteristics:
+
+Size: Hundreds of thousands of active users, with potential for rapid growth.
+Diversity: Includes urban and suburban consumers, small to medium-sized businesses, and global artisans.
+Geographic Distribution: Primarily North America and Europe, expanding to Asia and South America.
+Roles: Customers, sellers, verification partners, and system administrators.
+2. Functional Requirements
+Core Features:
+
+Eco-Score Integration: Displays a sustainability score for each product based on verified data.
+Vendor Registration: Streamlined process for sustainable vendors to list and manage products.
+Customizable Shopping Filters: Allows customers to sort by ethical criteria (e.g., fair trade, carbon footprint).
+Reward System: Customers earn points for purchasing eco-friendly items, redeemable for discounts.
+Impact Dashboard: Customers can view their cumulative environmental impact (e.g., carbon offset, waste reduction).
+Frequency of Authentication:
+
+Customers: Required per session or when accessing personal data or redeeming rewards.
+Sellers: Required per session, with reauthentication for actions like product verification submissions or payouts.
+Sensitivity of Actions:
+
+High Sensitivity: Vendor payout processes, product verification submissions, account changes.
+Moderate Sensitivity: Reward redemptions, eco-score recalculations.
+Low Sensitivity: Browsing products or reading vendor profiles.
+3. Non-Functional Requirements
+Performance:
+
+Average page load time should not exceed 1.5 seconds.
+System should support 8,000 concurrent users during normal activity and 50,000 during promotional events.
+Scalability:
+
+Scalable infrastructure to handle growth in vendors and eco-score computation demands.
+Reliability:
+
+Ensure 99.95% uptime with automated failover systems for critical operations.
+Data recovery from backups within 2 hours in case of major incidents.
+Security:
+
+Secure APIs for vendor product data uploads.
+Encryption of all user and vendor data in transit and at rest.
+Role-based access controls to limit sensitive data access.
+Usability:
+
+Intuitive interface emphasizing eco-friendly choices with educational tooltips.
+Support for multiple languages and accessibility standards, such as WCAG 2.1 compliance.
+4. Constraints
+Technical Constraints:
+
+Dependency on third-party APIs for eco-score calculations and sustainability certifications.
+Limited server infrastructure in regions with emerging markets, necessitating cloud-based solutions.
+Compliance Requirements:
+
+Adherence to GDPR for European users.
+Compliance with FTC Green Guides to ensure truth in advertising claims.
+Resource Constraints:
+
+Development budget capped at $3 million for the first two years.
+Limited availability of in-house sustainability experts, requiring third-party partnerships.
+Integration Needs:
+
+Integration with major payment platforms and carbon offset partners.
+Compatibility with accounting systems used by vendors for financial tracking.
+This scenario outlines a realistic e-commerce platform tailored to the growing demand for sustainable and ethical shopping options. It incorporates features, constraints, and requirements that align with the goals of promoting environmental awareness and enabling seamless user experiences.
+
+
+
+
+
