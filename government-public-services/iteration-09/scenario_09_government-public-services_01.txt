@@ -1,0 +1,96 @@
+
+Scenario: Citizen Assistance and Resource Management System (CARMS)
+1. System Overview
+System Purpose:
+The Citizen Assistance and Resource Management System (CARMS) aims to streamline the delivery of government services by enabling citizens to apply for, track, and manage assistance programs such as housing, unemployment benefits, healthcare subsidies, and emergency aid. The system also provides caseworkers and administrators with tools to manage applications efficiently, ensure compliance with program rules, and allocate resources effectively.
+
+Domain/Context:
+Government and Public Services, specifically in the management of citizen assistance programs.
+
+Stakeholders:
+
+Citizens: Individuals applying for assistance programs.
+Caseworkers: Government employees responsible for processing applications, conducting eligibility checks, and managing citizen cases.
+Program Administrators: Oversee program compliance, reporting, and funding allocation.
+Policy Makers: Use the system's data to inform decisions about program changes or resource allocation.
+IT and Security Teams: Maintain the system, ensure its reliability, and enforce security measures.
+User Base Characteristics:
+
+Size: Approximately 2 million active users annually, comprising citizens and government employees.
+Diversity: Includes urban and rural populations, non-native language speakers, and users with varying levels of digital literacy.
+Geographic Distribution: National-level system accessible across all states and territories.
+Roles: Citizens, caseworkers, program administrators, and IT personnel.
+Operational Environment:
+Cloud-hosted platform accessible via web browsers and a mobile application. The system must support remote access for citizens and government employees while ensuring high availability and redundancy.
+
+Usage Scenarios:
+
+Citizens submitting applications for housing assistance.
+Caseworkers verifying eligibility and conducting case updates.
+Administrators generating reports on program usage and compliance.
+Citizens receiving notifications about application statuses and required actions.
+2. Functional Requirements
+Core Features:
+
+Citizen Portal: Application submission, status tracking, document uploads, and notifications.
+Caseworker Dashboard: Application review, eligibility verification, and communication with applicants.
+Administrator Tools: Generate compliance reports, track resource allocation, and monitor system usage.
+Document Management: Secure storage and retrieval of sensitive documents.
+Integrated Communication: Notifications via email, SMS, and in-app messages for updates and reminders.
+Authentication Conditions & Frequency:
+
+Users must authenticate at the beginning of each session.
+Re-authentication required for sensitive actions such as document uploads or changes to application details.
+Sessions expire after 30 minutes of inactivity.
+Sensitivity of Actions & Permission Levels:
+
+High Sensitivity: Approving applications, accessing full citizen profiles, or generating compliance reports (restricted to caseworkers and administrators).
+Moderate Sensitivity: Submitting applications or uploading sensitive documents (citizens).
+Low Sensitivity: Viewing general program information or FAQ sections (all users).
+3. Non-Functional Requirements
+Performance:
+
+System must respond to user actions within 2 seconds on average.
+Handle 100,000 concurrent users during peak application periods.
+Scalability:
+
+Designed to accommodate a 25% annual increase in users and data volume.
+Reliability:
+
+99.95% uptime requirement with automatic failover mechanisms.
+Daily backups of application data and audit logs.
+Security:
+
+Data encryption in transit and at rest.
+Role-based access control to restrict data and actions based on user roles.
+Regular penetration testing and security audits.
+Usability:
+
+Fully compliant with WCAG 2.1 AA for accessibility.
+Intuitive interfaces with multilingual support for the top five languages used by the citizen base.
+Audit & Monitoring:
+
+Log all user actions, including authentication events and sensitive changes.
+Retain logs for five years for compliance and investigative purposes.
+4. Constraints
+Technical Constraints:
+
+Must integrate with existing national identity verification systems and payment gateways.
+Requires support for legacy browsers used in rural areas.
+Compliance Requirements:
+
+Adherence to GDPR, NIST cybersecurity standards, and local data protection laws.
+Resource Constraints:
+
+Development budget of $25 million over three years.
+Team of 60 developers, testers, and project managers allocated to the project.
+Limited on-premise hardware due to a preference for cloud-first deployment.
+Integration Needs:
+
+Seamless integration with state-level assistance program databases and national fraud detection systems.
+This scenario reflects a realistic and comprehensive government software system design that aligns with public service requirements and challenges while ensuring resource allocation and constraints are feasible.
+
+
+
+
+

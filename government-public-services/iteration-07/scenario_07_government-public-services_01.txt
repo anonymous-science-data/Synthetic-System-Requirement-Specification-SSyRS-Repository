@@ -1,0 +1,98 @@
+
+Scenario: Digital Case Management System for Social Services
+1. System Overview
+System Purpose:
+The Digital Case Management System (DCMS) is designed to streamline the intake, assessment, and resolution processes for social service cases. Its goal is to enhance efficiency, reduce paperwork, and provide a centralized repository for case information, enabling faster and more accurate decision-making for public service officers.
+
+Domain/Context:
+The system operates within the public welfare sector, specifically targeting government-run social service agencies responsible for providing assistance in housing, healthcare, financial aid, and family support.
+
+Stakeholders:
+
+Social Workers: Use the system to manage case files and track client interactions.
+Administrators: Oversee operations, ensure compliance, and manage resource allocation.
+Clients: Individuals seeking assistance interact with the system through a portal for applications, updates, and communication.
+IT Staff: Responsible for system maintenance, security, and troubleshooting.
+Auditors and Compliance Officers: Access the system for monitoring, reporting, and ensuring adherence to regulations.
+User Base Characteristics:
+
+Approximately 20,000 active users, including 15,000 social workers and administrators across multiple regions and 5,000 clients accessing the portal.
+Geographic distribution spans urban, suburban, and rural areas, requiring offline capabilities for remote fieldwork.
+User roles include case workers, supervisors, administrative staff, and external clients.
+Operational Environment:
+
+Hosted on a government-secured cloud infrastructure to allow nationwide access while ensuring data security.
+Accessible via web and mobile applications optimized for low-bandwidth environments.
+Designed for compatibility with government-issued devices.
+Usage Scenarios:
+
+A social worker logs in to create a new case, updates client details, and schedules an in-person visit.
+Clients access the portal to submit required documentation and check the status of their applications.
+Administrators generate reports on the number of resolved cases within a given time frame to evaluate performance metrics.
+Auditors review case histories and user actions to ensure compliance with social service policies.
+2. Functional Requirements
+Core Features:
+
+Case Intake and Management: Users can create, update, and close cases.
+Document Upload and Verification: Clients and case workers upload supporting documents, verified by the system for completeness.
+Communication Tools: Integrated messaging between clients and social workers.
+Automated Workflows: Triggers for follow-ups, reminders, and escalation protocols.
+Report Generation: Predefined and customizable reports for performance monitoring.
+Authentication Conditions & Frequency:
+
+Users must authenticate at the start of each session.
+Re-authentication is required after 60 minutes of inactivity.
+Sensitive actions, such as case closure or document approval, prompt immediate re-authentication.
+Sensitivity of Actions & Permission Levels:
+
+Case creation and updates: Limited to social workers and supervisors.
+Case closures and approvals: Restricted to supervisors and administrators.
+Access to audit logs: Available only to auditors and compliance officers.
+3. Non-Functional Requirements
+Performance:
+
+The system must handle up to 1,000 concurrent users with response times under 2 seconds for standard queries.
+Batch processing of large reports should complete within 30 minutes.
+Scalability:
+
+Must accommodate a 25% annual increase in users and a 50% increase in stored data volumes over five years.
+Reliability:
+
+99.95% uptime with failover mechanisms to ensure continuity during outages.
+Automated backups every 4 hours with a recovery time objective (RTO) of 1 hour.
+Security:
+
+End-to-end encryption for all data in transit and at rest.
+Role-based access control (RBAC) with periodic access reviews.
+Usability:
+
+Compliance with WCAG 2.1 AA for accessibility.
+Simple, intuitive interfaces tailored for users with minimal technical expertise.
+Audit & Monitoring:
+
+Real-time logging of all user actions, including authentication events.
+Monthly audit reports with anomaly detection and alerting for unusual access patterns.
+4. Constraints
+Technical Constraints:
+
+The system must operate on government-approved cloud providers.
+Integration required with the National Citizen Database for identity verification.
+Compliance Requirements:
+
+Must adhere to data protection laws such as GDPR and local privacy regulations.
+Compliance with ISO 27001 standards for information security management.
+Resource Constraints:
+
+Development budget capped at $8 million over 24 months.
+Core team of 30, including developers, business analysts, and quality assurance specialists.
+Integration Needs:
+
+Seamless data exchange with legacy case tracking systems during a phased migration.
+APIs for integration with financial aid disbursement systems to automate payments.
+This scenario provides a realistic, resource-appropriate, and sector-specific example of a government software project for public services.
+
+
+
+
+
+

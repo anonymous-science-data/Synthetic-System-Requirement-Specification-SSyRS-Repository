@@ -1,0 +1,69 @@
+
+Scenario: Citizen Services Request and Management System (CSRM)
+1. System Overview
+System Purpose:
+The Citizen Services Request and Management System (CSRM) is designed to enable citizens to report non-emergency issues (e.g., potholes, broken streetlights, waste collection problems) and track their resolution. The system aims to improve municipal responsiveness, transparency, and citizen satisfaction by streamlining service requests and providing real-time updates.
+
+Domain/Context:
+The system operates within municipal public services, focusing on managing citizen service requests across multiple city departments, such as public works, utilities, and environmental services.
+
+Stakeholders:
+Key stakeholders include municipal administrators, citizens, city maintenance staff, third-party contractors, and elected officials monitoring service performance.
+
+User Base Characteristics:
+The user base includes approximately 100,000 active users, predominantly city residents, spanning diverse socio-economic backgrounds and tech literacy levels. It also includes 500 municipal employees and contractors across 10 city districts.
+
+2. Functional Requirements
+Core Features:
+
+A user-friendly portal and mobile app for submitting service requests with location tagging and photos.
+Automated routing of requests to the appropriate city department based on location and type.
+Real-time notifications to citizens on request status (e.g., "Received," "In Progress," "Resolved").
+A dashboard for municipal employees to manage requests, track workloads, and generate performance reports.
+Public-facing maps displaying the status of active service requests to enhance transparency.
+Frequency of Authentication:
+Citizens authenticate once per session using password-based authentication or social login (e.g., Google, Apple). Municipal employees authenticate using role-based multi-factor authentication (MFA) at every login.
+
+Sensitivity of Actions:
+
+High sensitivity: Municipal employees assigning or closing service requests, accessing internal reports.
+Medium sensitivity: Citizens updating submitted service requests or tracking service progress.
+3. Non-Functional Requirements
+Performance:
+The system must support up to 5,000 concurrent users with a response time of under 3 seconds for 95% of requests.
+
+Scalability:
+The system should accommodate a 10% annual increase in citizen users and service requests, supporting up to 200,000 active users by year 10.
+
+Reliability:
+The system must maintain 99.95% uptime, with a maximum allowable downtime of 4 hours per year. Failover mechanisms should ensure uninterrupted service during critical failures.
+
+Security:
+All data exchanges must use end-to-end encryption (TLS 1.3), and data at rest must be encrypted using AES-256. Role-based access control (RBAC) ensures access is limited to authorized actions.
+
+Usability:
+The interface must comply with WCAG 2.1 Level AA standards and provide a low-bandwidth mode for users with limited internet access.
+
+4. Constraints
+Technical Constraints:
+
+The system will be deployed on a hybrid cloud infrastructure to balance scalability and data sovereignty.
+It must integrate with the city's existing GIS system for location-based routing of service requests.
+Compliance Requirements:
+
+Adherence to local data protection laws and federal transparency regulations (e.g., FOIA).
+Annual audits to ensure compliance with municipal accountability standards.
+Resource Constraints:
+
+The project budget is capped at $3 million, with a 24-month implementation timeline.
+The development team includes six software engineers, two designers, and two business analysts.
+Integration Needs:
+
+The system must integrate with the municipal CRM system for case management and the city's public notification system for updates.
+This scenario reflects a realistic public service application, incorporating goals, technical considerations, and constraints specific to the Government and Public Services domain.
+
+
+
+
+
+

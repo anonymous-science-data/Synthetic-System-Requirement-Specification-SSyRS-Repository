@@ -1,0 +1,99 @@
+
+Scenario: Citizen Feedback and Issue Resolution System (CFIRS)
+1. System Overview
+System Purpose:
+The Citizen Feedback and Issue Resolution System (CFIRS) facilitates efficient reporting, tracking, and resolution of public issues such as potholes, streetlight outages, and sanitation concerns. The system aims to improve citizen engagement, enhance service delivery, and provide transparency into the resolution process.
+
+Domain/Context:
+The CFIRS operates in the public service delivery domain, enabling local governments to manage citizen-reported issues and track their resolution.
+
+Stakeholders:
+
+Citizens: Individuals reporting issues and tracking resolutions.
+Municipal Employees: Staff responsible for triaging, assigning, and resolving reported issues.
+Government Officials: Decision-makers using the system to monitor service quality and generate reports for accountability.
+IT Administrators: Responsible for system operation, maintenance, and security.
+User Base Characteristics:
+
+Size: 15,000 active users monthly, including 13,000 citizens and 2,000 municipal staff.
+Diversity: Users include tech-savvy individuals as well as those with minimal digital experience.
+Geographic Distribution: Local government jurisdiction, with all users within city or county limits.
+Roles: Citizens, issue managers, municipal workers, supervisors, and administrators.
+Operational Environment:
+
+Cloud-based system with web and mobile app interfaces.
+Accessible on personal devices for citizens and on dedicated terminals for municipal staff.
+Offline functionality for field workers to log updates in areas with poor connectivity.
+Usage Scenarios:
+
+Citizens submit issue reports via the mobile app or web portal, attaching descriptions, photos, and location data.
+Municipal employees assign reported issues to field workers and track progress through the system.
+Supervisors monitor issue resolution timelines and reassign tasks as needed.
+Government officials generate reports on service delivery metrics, such as average resolution times and issue types.
+2. Functional Requirements
+Core Features:
+
+User-friendly reporting interface for citizens with options to upload photos and pinpoint issue locations on a map.
+Automated categorization of issues based on user input and predefined templates.
+Task assignment and tracking for municipal employees.
+Real-time dashboards displaying issue statistics and resolution timelines.
+Notification system to update citizens on issue status changes (e.g., "Received," "In Progress," "Resolved").
+Authentication Conditions & Frequency:
+
+Citizens authenticate once per session, with sessions expiring after 15 minutes of inactivity.
+Municipal employees authenticate at the start of each shift and must re-authenticate for critical actions such as closing issues or modifying task assignments.
+Administrators re-authenticate every time they access system configuration settings.
+Sensitivity of Actions & Permission Levels:
+
+Issue resolution approvals: Restricted to supervisors.
+Task reassignment: Accessible to issue managers and supervisors.
+Configuration changes: Limited to IT administrators.
+Issue submission: Open to authenticated citizens with minimal restrictions.
+3. Non-Functional Requirements
+Performance:
+
+System must handle up to 5,000 concurrent users, with response times under 3 seconds for 95% of operations.
+Scalability:
+
+Designed to support a 20% annual increase in user base and reported issues without performance degradation.
+Reliability:
+
+99.9% uptime, with automated failover mechanisms and nightly backups.
+Security:
+
+Data encryption in transit and at rest.
+Role-based access control to prevent unauthorized actions.
+Suspicious activity monitoring and alerting, such as multiple failed login attempts.
+Usability:
+
+Intuitive design meeting WCAG 2.1 AA standards for accessibility.
+Multilingual support for the primary languages spoken in the jurisdiction.
+Offline capabilities for field workers to upload updates when back online.
+Audit & Monitoring:
+
+Comprehensive logging of user activities, including issue submissions, task assignments, and system configuration changes, retained for 7 years.
+Real-time monitoring of system health, with alerts for critical errors.
+4. Constraints
+Technical Constraints:
+
+Must integrate with existing GIS systems for location-based issue tracking.
+Designed to run on older municipal hardware still in use by some departments.
+Compliance Requirements:
+
+Adherence to local privacy laws regarding citizen data protection.
+Compliance with state and federal transparency mandates for public service delivery.
+Resource Constraints:
+
+Development budget of $2.5 million and a two-year implementation timeline.
+Core team limited to 18 personnel, including developers, analysts, and project managers.
+Integration Needs:
+
+Seamless integration with the municipality's work order management system.
+APIs for future integration with regional complaint and resolution systems.
+This scenario presents a realistic and practical system for addressing a common public service challenge, aligning with the constraints and goals typical in the Government and Public Services sector.
+
+
+
+
+
+

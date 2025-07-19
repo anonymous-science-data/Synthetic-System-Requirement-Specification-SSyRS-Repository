@@ -1,0 +1,108 @@
+
+1. System Overview
+
+System Purpose:
+The "Environmental Impact Monitoring and Reporting System" (EIMRS) is designed to monitor and report environmental factors such as air and water quality, deforestation, and wildlife population changes in real-time. Its primary objectives are to enhance data-driven environmental policymaking, facilitate compliance with environmental laws, and promote transparency in ecological protection efforts.
+
+Domain/Context:
+EIMRS operates in the Government and Public Services domain, specifically under environmental protection and natural resource management. It integrates with government agencies, research institutions, and local conservation groups to ensure accurate and timely data collection.
+
+Stakeholders:
+
+    Primary: National environmental agencies, municipal environmental protection departments, and research scientists.
+    Secondary: Non-governmental organizations (NGOs) focused on conservation, local governments, and policymakers.
+    Tertiary: General public, industries subject to environmental regulations, and educational institutions.
+
+User Base Characteristics:
+
+    Size: Medium user base (~10,000 concurrent users, with peaks during regulatory reporting seasons).
+    Diversity: Includes government employees, researchers, conservationists, field inspectors, and administrative staff.
+    Geographic Distribution: Covers urban, rural, and remote natural areas, with significant usage in ecologically sensitive zones.
+    Roles: Administrators, data analysts, field researchers, regulatory auditors, and general data input personnel.
+
+Operational Environment:
+
+    Cloud-based system with on-premise data storage options for sensitive or region-specific datasets.
+    Access through web and mobile applications with offline data collection capabilities for field researchers in remote areas.
+
+Usage Scenarios:
+
+    Daily Use: Field researchers upload environmental measurements, and analysts review trends to identify anomalies.
+    Regulatory Use: Government agencies generate compliance reports for industries and regions.
+    Public Transparency Use: Select data is shared via a public-facing portal to inform citizens of environmental health metrics.
+
+2. Functional Requirements
+
+Core Features:
+
+    Data Collection and Upload: Allow users to upload and store air and water quality data, wildlife population metrics, and deforestation rates, including geolocation and timestamp metadata.
+    Environmental Trends Dashboard: Visualize real-time and historical environmental trends using graphs, heatmaps, and comparative charts.
+    Anomaly Detection: Use AI/ML models to identify and flag anomalies in environmental data for immediate review.
+    Regulatory Reporting: Automatically generate environmental compliance reports based on industry-specific regulations.
+    Public Data Sharing Portal: Provide selective data access for public transparency and education purposes.
+    Offline Data Entry and Syncing: Enable field researchers to input data in areas without internet connectivity and sync it when online.
+
+Authentication Conditions & Frequency:
+
+    Session Expiration: Sessions automatically expire after 45 minutes of inactivity.
+    Sensitive Actions: Reauthentication required for generating regulatory reports and editing public-facing data.
+
+Sensitivity of Actions & Permission Levels:
+
+    High Sensitivity: Modifying regulatory parameters, system configurations, or public data views (restricted to administrators).
+    Moderate Sensitivity: Approving flagged anomalies and generating compliance reports (accessible to analysts and managers).
+    Low Sensitivity: Uploading routine environmental measurements and viewing dashboards (accessible to field staff and researchers).
+
+3. Non-Functional Requirements
+
+Performance:
+
+    Response time under 2 seconds for retrieving dashboards and generating reports.
+    Handle up to 250,000 data points uploaded daily during peak operations.
+
+Scalability:
+
+    Support a 200% increase in data volume during environmental crises (e.g., wildfires or floods) without performance degradation.
+
+Reliability:
+
+    Ensure 99.9% uptime with disaster recovery measures, including hourly backups and failover mechanisms.
+
+Security:
+
+    Implement role-based access control with detailed permission hierarchies.
+    Encrypt all data in transit and at rest, with additional protection for sensitive regulatory datasets.
+
+Usability:
+
+    Compliant with WCAG 2.1 accessibility standards to ensure inclusivity for users with disabilities.
+    Intuitive interfaces tailored for non-technical users, including clear workflows for field researchers.
+
+Audit & Monitoring:
+
+    Comprehensive logging of user activities and system events, with data retained for 10 years.
+    Automated alerts for anomalous activities, such as bulk data uploads or unauthorized access attempts.
+
+4. Constraints
+
+Technical Constraints:
+
+    Operates on government-mandated cloud infrastructure with limited third-party API support.
+    Offline capabilities must function in areas with intermittent power and extreme weather conditions.
+
+Compliance Requirements:
+
+    Adheres to environmental regulations such as the Clean Air Act and Clean Water Act (or equivalents).
+    Complies with data protection laws like GDPR for sensitive user and location data.
+
+Resource Constraints:
+
+    Budget capped at $4 million, with a 30-month development timeline.
+    Development team includes 20 members, including software developers, environmental domain experts, and project managers.
+
+Integration Needs:
+
+    Seamless integration with existing satellite monitoring systems and remote sensing data platforms.
+    Data interoperability with legacy databases used by local environmental agencies.
+
+This scenario represents a realistic and unique solution tailored to environmental protection in the Government and Public Services domain. It incorporates best practices, diverse user needs, and well-defined constraints to ensure feasibility and alignment with domain goals.
