@@ -1,0 +1,94 @@
+
+Retail and Supply-Chain Scenario: Omni-Channel Customer Engagement and Fulfillment System (OCEFS)
+1. System Overview
+System Purpose:
+The Omni-Channel Customer Engagement and Fulfillment System (OCEFS) is designed to unify customer interactions and streamline fulfillment across in-store, online, and third-party marketplace channels. Its primary goal is to enhance customer experience by providing consistent product availability, accurate order tracking, and flexible delivery options.
+
+Domain/Context:
+The retail and supply-chain domain with a focus on omni-channel operations, including e-commerce, physical retail, and direct-to-consumer models. The system facilitates seamless integration between customer touchpoints and back-end fulfillment processes.
+
+Stakeholders:
+
+Customers: Expecting real-time product availability, order tracking, and flexible delivery/pickup options.
+Retail Managers: Overseeing inventory and sales performance across channels.
+Logistics and Fulfillment Teams: Managing order picking, packing, and delivery schedules.
+IT Teams: Ensuring system uptime, security, and scalability.
+User Base Characteristics:
+
+Size: Approximately 10,000 concurrent users during peak holiday sales.
+Diversity: Roles include store associates, warehouse workers, delivery personnel, and online customer support agents.
+Geographic Distribution: U.S., Europe, and Latin America, with a mix of urban and rural operations.
+Operational Environment:
+The system operates on a cloud-native platform with mobile-optimized interfaces for warehouse and delivery staff, and API integrations for third-party logistics providers. Localized data centers support faster processing in key regions.
+
+Usage Scenarios:
+
+Customers search for product availability across online and in-store channels.
+Store associates use handheld devices to locate items for in-store pickup orders.
+Warehouse staff process online orders, updating customers with real-time fulfillment status.
+Logistics teams allocate delivery resources based on regional demand.
+IT teams monitor system performance and resolve downtime incidents.
+2. Functional Requirements
+Core Features:
+
+Unified Inventory Management: Real-time visibility into stock across warehouses, stores, and in-transit locations.
+Order Fulfillment Workflow: Tools to manage order processing from receipt to delivery.
+Customer Engagement Portal: Allowing customers to check order status, modify delivery options, and contact support.
+Dynamic Delivery Scheduling: Integration with third-party logistics for real-time scheduling and route optimization.
+Returns and Exchanges: Simplified processes for customers to initiate returns, with real-time updates to stock levels.
+Authentication Conditions & Frequency:
+
+Users authenticate at the start of their shifts using role-based credentials and MFA.
+Re-authentication is required for actions like overriding system-generated inventory counts or approving refunds above a threshold.
+Sensitivity of Actions & Permission Levels:
+
+High Sensitivity: Modifying inventory thresholds, approving large-scale stock transfers (Manager roles).
+Medium Sensitivity: Adjusting order fulfillment statuses or creating manual shipments (Fulfillment staff).
+Low Sensitivity: Viewing inventory levels or order details (General staff and store associates).
+3. Non-Functional Requirements
+Performance:
+
+Average response time under 1.5 seconds for 95% of customer-facing actions.
+Support up to 1,500 order updates per second during peak sales events.
+Scalability:
+
+Expandable to handle a 100% increase in user activity and transaction volume during major sales events, such as Black Friday.
+Reliability:
+
+99.95% uptime SLA, with disaster recovery plans ensuring minimal data loss in critical failures.
+Security:
+
+All customer and transaction data encrypted in transit and at rest.
+Continuous monitoring for unauthorized access or anomalies in user behavior.
+Usability:
+
+Mobile-friendly interfaces for store associates and delivery personnel.
+Multilingual support for English, Spanish, and Portuguese to cater to the geographic distribution.
+Audit & Monitoring:
+
+Detailed logging of user actions, including inventory adjustments and order modifications, with searchable logs retained for 3 years.
+Real-time dashboards for tracking system health and order processing efficiency.
+4. Constraints
+Technical Constraints:
+
+Integration required with existing ERP systems, third-party logistics platforms, and payment gateways.
+Must support legacy barcode scanning hardware in warehouses for at least 2 years during phased upgrades.
+Compliance Requirements:
+
+Must comply with GDPR for European customers and CCPA for California-based users.
+Adhere to PCI-DSS standards for handling payment information.
+Resource Constraints:
+
+Development budget limited to $5 million over a 24-month timeline.
+Team includes 20 developers, 5 business analysts, and 4 QA engineers.
+Integration Needs:
+
+Seamless API integrations with major logistics providers like FedEx and DHL for real-time updates.
+Compatibility with legacy POS systems used in retail stores to ensure continuity during the transition phase.
+This scenario presents a detailed and realistic use case for an omni-channel retail and supply-chain system, addressing key industry challenges and aligning with business and technical constraints.
+
+
+
+
+
+
