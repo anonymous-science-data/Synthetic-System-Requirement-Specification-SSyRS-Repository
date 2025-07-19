@@ -1,0 +1,110 @@
+
+1. System Overview
+System Purpose:
+
+The system, Unified Network Performance & Optimization Portal (UNPOP), is designed to provide real-time monitoring, predictive analytics, and optimization tools for a telecommunications provider managing a complex multi-country network infrastructure. The primary goal is to improve network performance, minimize downtime, and enhance the user experience for subscribers.
+Domain/Context:
+
+Telecommunications Network Management: The system operates in the domain of monitoring, maintaining, and optimizing large-scale telecommunication infrastructures, including 5G, fiber-optic, and legacy networks.
+Stakeholders:
+
+    Network Operations Center (NOC) Teams: Responsible for day-to-day network monitoring and issue resolution.
+    Field Engineers: Use the system for diagnostics and targeted actions.
+    Regional Managers: Use analytics for strategic decisions on network upgrades.
+    Executive Leadership: Track high-level performance KPIs.
+    Regulators: Access audit and compliance reports.
+
+User Base Characteristics:
+
+    Size: Approximately 10,000 active users, including employees and external contractors.
+    Diversity: Users range from technical engineers to non-technical business leaders.
+    Geographic Distribution: Spanning multiple countries in Europe, with varying regulatory and language requirements.
+    Roles: NOC personnel, field engineers, regional managers, executives, and regulators.
+
+Operational Environment:
+
+    Hosting: Hybrid architecture with cloud-based analytics and on-premise components for real-time data ingestion from network equipment.
+    Access Modes: Web-based interface for office users, mobile applications for field engineers, and API integrations for third-party tools.
+    Usage Scenarios:
+        A NOC engineer identifies performance degradation in a specific region and escalates the issue for immediate intervention.
+        Field engineers receive a prioritized list of maintenance tasks with contextual diagnostics.
+        Regional managers analyze trends to plan infrastructure investments.
+        Regulators audit compliance logs to ensure adherence to regional telecom regulations.
+
+2. Functional Requirements
+Core Features:
+
+    Real-Time Network Monitoring: Dashboards displaying performance metrics such as latency, packet loss, and bandwidth utilization.
+    Predictive Analytics: Machine learning models to predict outages or performance degradation based on historical trends.
+    Optimization Suggestions: Automated recommendations for improving network efficiency, such as rerouting traffic or balancing loads.
+    Incident Management: Integrated ticketing system for logging and resolving issues.
+    Regulatory Reporting: Automated generation of compliance reports tailored to regional requirements.
+    Multi-Language Support: Interface translations for major European languages.
+    API for Third-Party Integrations: Allow external systems to access metrics and reports.
+
+Authentication Conditions & Frequency:
+
+    Session Expiration: User sessions expire after 30 minutes of inactivity to reduce exposure.
+    Sensitive Actions: Role-specific actions like editing configurations or generating compliance reports require re-authentication.
+    Multi-Tiered Access: Permissions are assigned based on user roles, restricting sensitive features like manual configuration changes to authorized personnel.
+
+Sensitivity of Actions & Permission Levels:
+
+    Critical Operations: E.g., rerouting network traffic or modifying equipment configurations (restricted to NOC leads and above).
+    Sensitive Reports: Access to compliance reports or network-wide performance summaries is limited to managerial roles and regulators.
+    General Monitoring: Accessible to all users but with view-only restrictions for non-technical roles.
+
+3. Non-Functional Requirements
+Performance:
+
+    Dashboards must update with no more than a 2-second delay under typical load.
+    System supports up to 1 million telemetry data points processed per second.
+
+Scalability:
+
+    Must support doubling the user base and a 50% increase in telemetry volume over five years.
+    Elastic cloud architecture ensures smooth scaling during peak periods.
+
+Reliability:
+
+    99.99% uptime required, with failover mechanisms for both cloud and on-premise components.
+    System must recover from failures within 5 minutes to avoid prolonged outages.
+
+Security:
+
+    Data must be encrypted both in transit and at rest.
+    Role-based access controls to prevent unauthorized access.
+    Detailed logging of all user actions for traceability.
+
+Usability:
+
+    Mobile app optimized for field engineers, including offline functionality for remote areas.
+    Intuitive dashboards with customizable widgets for different user roles.
+
+Audit & Monitoring:
+
+    Continuous logging of user actions and system events.
+    Audit reports for all changes made to network configurations or compliance data.
+
+4. Constraints
+Technical Constraints:
+
+    Legacy systems for certain network equipment provide limited telemetry formats, requiring custom parsers.
+    On-premise data ingestion modules must comply with regional data sovereignty laws.
+
+Compliance Requirements:
+
+    GDPR compliance for personal data.
+    Regional telecom regulatory standards for network performance and reporting.
+
+Resource Constraints:
+
+    Budget: €15 million over 3 years.
+    Team: Initial team of 50 members, including developers, data scientists, and system architects.
+    Timeline: Phased delivery over 24 months with quarterly milestones.
+
+Integration Needs:
+
+    Seamless integration with existing incident management tools and ERP systems.
+    Ability to connect to vendor-specific APIs for diverse equipment brands.
+

@@ -1,0 +1,92 @@
+
+Telecommunications System Requirements Scenario
+1. System Overview
+System Purpose:
+The system is designed to provide centralized management and optimization of network resources for a mid-sized telecommunications provider. It aims to improve network performance, automate resource allocation, and enhance customer experience by offering self-service portals and efficient troubleshooting tools.
+
+Domain/Context:
+The telecommunications industry, specifically targeting network operations and customer-facing digital services.
+
+Stakeholders:
+
+Internal: Network operations teams, customer support representatives, and IT administrators.
+External: Residential and business customers who use telecommunications services, including internet, voice, and video services.
+Regulatory Bodies: Agencies ensuring compliance with telecommunications laws and data privacy regulations.
+User Base Characteristics:
+
+Size: Approximately 1,500 internal users and up to 200,000 active external users.
+Diversity: Users range from highly technical engineers to non-technical customers.
+Geographic Distribution: Internal users are primarily in the provider's operational hubs, while external users are spread across a multi-state region.
+Roles: Internal users include administrators, engineers, and customer service agents. External users consist of customers managing their accounts and usage.
+Operational Environment:
+
+Hosting: The system is cloud-based with redundancy across multiple data centers for high availability.
+Access: Available via web portals, mobile applications, and APIs for internal systems.
+Usage Scenarios: Customers use the system to check service statuses, troubleshoot connectivity issues, or upgrade plans. Internal teams use it to allocate resources, monitor network performance, and respond to incidents.
+2. Functional Requirements
+Core Features:
+
+Network Optimization: Automate bandwidth allocation based on demand patterns and service-level agreements (SLAs).
+Customer Self-Service Portal: Enable users to view and pay bills, manage subscriptions, and report issues.
+Incident Management: Provide tools for internal teams to identify, log, and resolve network issues efficiently.
+Real-Time Monitoring: Dashboards displaying key performance indicators (KPIs) such as network latency and usage trends.
+API for Integrations: Allow third-party systems to query network data and trigger operations.
+Authentication Conditions & Frequency:
+
+Session-Based: Authentication is required at the start of every session, with automatic expiration after 30 minutes of inactivity.
+Sensitive Actions: Re-authentication is required for actions such as modifying user permissions, making large account payments, or provisioning network changes.
+Sensitivity of Actions & Permission Levels:
+
+Low Sensitivity: Viewing account details or network usage (Customer role).
+Moderate Sensitivity: Submitting trouble tickets or adjusting subscriptions (Customer role with verification).
+High Sensitivity: Modifying network configurations or managing SLAs (Administrator or Engineer role).
+3. Non-Functional Requirements
+Performance:
+
+Ensure a response time under 2 seconds for 95% of user interactions.
+Support concurrent usage by up to 10,000 users without performance degradation.
+Scalability:
+
+The system must scale to handle a 30% increase in active users annually over the next 5 years.
+Accommodate bursts of up to 20% additional traffic during peak hours.
+Reliability:
+
+Achieve 99.9% uptime, with failover mechanisms in place for critical services.
+Implement robust error logging and automatic retries for transient failures.
+Security:
+
+All data must be encrypted at rest and in transit.
+Role-based access controls to restrict sensitive operations.
+Usability:
+
+Provide intuitive interfaces, with mobile apps optimized for Android and iOS.
+Ensure accessibility compliance (e.g., WCAG 2.1 AA).
+Audit & Monitoring:
+
+Log all authentication events, network configuration changes, and customer transactions.
+Generate weekly reports on usage trends and security incidents for internal review.
+4. Constraints
+Technical Constraints:
+
+Must integrate with the existing OSS/BSS (Operational Support Systems/Business Support Systems).
+Limited support for older customer devices using legacy web browsers.
+Compliance Requirements:
+
+Adhere to GDPR for data privacy and CCPA for customer transparency.
+Follow industry standards such as ISO 27001 for information security management.
+Resource Constraints:
+
+Budget: $2 million allocated for development and initial deployment.
+Team Size: 20 members, including developers, testers, and system architects.
+Time Frame: 18 months from requirements gathering to system launch, with 3 months allocated for pilot testing.
+Integration Needs:
+
+Integrate seamlessly with existing customer authentication systems and network monitoring tools.
+Provide APIs for external reporting systems used by regulatory agencies.
+This scenario outlines a practical, conservative roadmap for a telecommunications system, aligning business goals with technical and operational feasibility.
+
+
+
+
+
+
