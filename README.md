@@ -1,4 +1,4 @@
-This folder contains all 300 generated SSyRS structured by Industry Domains.
+This repository contains all 300 generated SSyRS structured by Industry Domains.
 Each Industry Domain is stored in an individual folder with sub-folders for each of the ten iterations.
 Each iteration folder contains three generated SSyRS.
 
