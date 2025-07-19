@@ -1,0 +1,81 @@
+
+Scenario: Centralized Loan Origination and Approval System for Retail Banking
+
+1. System Overview
+System Purpose:
+The system is designed to streamline the loan origination and approval process for retail banking. Its objectives are to reduce manual effort, minimize loan processing times, and improve decision accuracy through automated credit assessments.
+
+Domain/Context:
+This system operates within the retail banking sector, specifically focusing on personal loans, home loans, and small business loans.
+
+Stakeholders:
+
+Primary Stakeholders: Loan officers, credit analysts, and retail banking customers.
+Secondary Stakeholders: Risk management teams, IT infrastructure teams, and regulatory auditors.
+User Base Characteristics:
+
+Retail Customers: A broad base of individual and small business customers, typically in urban and semi-urban areas, with varying creditworthiness profiles.
+Internal Users: Loan officers and credit analysts spread across multiple regional branches.
+Administrators: A central IT team responsible for maintaining the system and ensuring uptime.
+2. Functional Requirements
+Core Features:
+
+An online loan application portal for customers with a mobile-friendly interface.
+Automated credit scoring using data from external credit bureaus and internal banking systems.
+Workflow management for loan officers to track applications and approvals.
+Document upload and verification for customer-provided financial information.
+Rule-based loan decision engine that incorporates configurable policies for different loan types.
+Frequency of Authentication:
+
+Customers authenticate once per session when submitting loan applications.
+Internal users (loan officers, credit analysts) reauthenticate for each action involving credit scoring overrides or manual approvals.
+Sensitivity of Actions:
+
+Low sensitivity: Viewing application statuses and general loan offerings.
+Medium sensitivity: Document uploads, initiating credit checks, and interacting with customer data.
+High sensitivity: Modifying loan policies, approving or rejecting loans, and overriding automated decisions.
+3. Non-Functional Requirements
+Performance:
+
+Ensure loan application processing within 5 seconds, including automated credit scoring.
+Support simultaneous processing of up to 3,000 loan applications during peak hours.
+Scalability:
+
+Accommodate a 50% increase in application volume over the next three years without additional hardware investments.
+Reliability:
+
+Achieve 99.9% system uptime with automated backups and failover systems for critical processes.
+Recover from system outages within 15 minutes to prevent disruptions in loan processing.
+Security:
+
+End-to-end encryption for customer data and loan documents.
+Role-based access control (RBAC) for internal users.
+Regular vulnerability scans and adherence to PCI DSS and GDPR standards.
+Usability:
+
+Simple and intuitive interfaces for customers with guided workflows.
+Dashboards for loan officers showing real-time application statuses and key metrics.
+4. Constraints
+Technical Constraints:
+
+Integration required with legacy banking systems, including core banking and customer relationship management (CRM) software.
+Limited availability of high-speed internet in semi-urban areas may affect customer interaction.
+Compliance Requirements:
+
+Compliance with GDPR for European customers and local lending regulations such as the Truth in Lending Act (TILA) in the U.S.
+Retention of customer data and loan documents for a minimum of 7 years, as mandated by regulators.
+Resource Constraints:
+
+A budget of $6 million with a 20-month timeline for implementation.
+Limited in-house expertise in document verification, requiring external vendor support for optical character recognition (OCR) solutions.
+Integration Needs:
+
+Seamless integration with external credit bureaus for real-time credit scoring.
+Compatibility with existing authentication mechanisms, including single sign-on (SSO) for internal users.
+This scenario reflects the challenges and requirements of building a centralized loan origination and approval system, balancing automation, user accessibility, compliance, and technical constraints specific to the retail banking sector.
+
+
+
+
+
+

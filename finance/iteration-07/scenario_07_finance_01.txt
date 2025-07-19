@@ -1,0 +1,93 @@
+
+1. System Overview
+System Purpose:
+The system, a cloud-based Portfolio Management and Risk Analysis Platform, aims to provide financial institutions with real-time portfolio tracking, risk assessment, and compliance reporting. Its primary goal is to streamline investment operations, improve risk mitigation, and ensure compliance with evolving regulatory standards.
+
+Domain/Context:
+The system operates within the finance and investment management domain, catering to asset managers, hedge funds, and institutional investors. It focuses on handling large volumes of market data and providing actionable insights.
+
+Stakeholders:
+
+Primary Users: Portfolio managers, risk analysts, compliance officers.
+Secondary Stakeholders: IT administrators, executive leadership, and regulatory auditors.
+External Stakeholders: Clients who require portfolio reports and regulatory bodies requiring compliance submissions.
+User Base Characteristics:
+
+Estimated 5,000-10,000 active users, including portfolio managers (40%), risk analysts (30%), and compliance officers (20%), with the remaining being administrators and external auditors.
+Users are distributed globally, with significant concentrations in North America, Europe, and Asia-Pacific regions.
+Roles include high-sensitivity users (e.g., administrators and compliance officers) and mid-sensitivity users (e.g., portfolio managers).
+Operational Environment:
+
+The system is cloud-hosted, accessible through web and mobile platforms.
+Designed for high availability, ensuring 99.9% uptime to accommodate global time zones.
+Mobile access is optimized for quick insights, while web access supports detailed reporting and data visualization.
+Usage Scenarios:
+
+Portfolio managers analyze real-time performance metrics and rebalance portfolios.
+Risk analysts evaluate exposure to market volatility and generate risk models.
+Compliance officers generate and submit regulatory reports on demand.
+Administrators set user permissions and monitor system activity.
+2. Functional Requirements
+Core Features:
+
+Portfolio Tracking: Real-time tracking of investments across asset classes, with customizable dashboards.
+Risk Analysis: Scenario-based risk assessments, including Value at Risk (VaR) and stress testing.
+Compliance Reporting: Automatic generation of reports aligned with regulations like MiFID II, Dodd-Frank, and Basel III.
+Data Integration: Seamless import/export of data from external financial systems and data providers.
+User Management: Role-based access controls and permission settings.
+Authentication Conditions & Frequency:
+
+Users must authenticate at the start of every session.
+Re-authentication required for sensitive actions such as changing portfolio configurations or exporting large datasets.
+Sessions expire after 30 minutes of inactivity.
+Sensitivity of Actions & Permission Levels:
+
+High-Sensitivity Actions: Approving trades, modifying compliance settings (restricted to administrators and compliance officers).
+Medium-Sensitivity Actions: Generating detailed reports (available to analysts and managers).
+Low-Sensitivity Actions: Viewing dashboards (accessible to all roles).
+3. Non-Functional Requirements
+Performance:
+
+System response time must not exceed 2 seconds for 95% of queries.
+Support for 50,000 concurrent users without performance degradation.
+Scalability:
+
+Designed to handle a 30% increase in user base annually.
+Data processing architecture supports real-time analytics on 10 TB of data per day.
+Reliability:
+
+Fault tolerance ensuring system recovery within 1 minute of critical failures.
+Redundancy in data storage and processing to prevent data loss.
+Security:
+
+End-to-end encryption for data in transit and at rest.
+Role-based access controls with granular permissions.
+Usability:
+
+Intuitive interface supporting 8 languages, including English, Spanish, and Mandarin.
+Accessibility compliance with WCAG 2.1 AA standards.
+Audit & Monitoring:
+
+Detailed logs of user activities, including authentication events and critical actions.
+Automated alerts for suspicious activities such as multiple failed logins.
+4. Constraints
+Technical Constraints:
+
+System must operate on AWS infrastructure, utilizing services such as S3 for storage and Lambda for serverless processing.
+Frontend developed in React, backend in Python/Django.
+Compliance Requirements:
+
+Adherence to GDPR for data handling within the EU.
+Compliance with SOX and FINRA for U.S.-based operations.
+Resource Constraints:
+
+Budget: $5 million for development, scaling, and initial deployment over 18 months.
+Team Size: 15 full-time staff, including developers (8), QA engineers (3), business analysts (2), and project managers (2).
+Integration Needs:
+
+Integration with Bloomberg Terminal, Refinitiv Eikon, and existing proprietary risk management tools.
+APIs for secure exchange of data with third-party services.
+
+
+
+
