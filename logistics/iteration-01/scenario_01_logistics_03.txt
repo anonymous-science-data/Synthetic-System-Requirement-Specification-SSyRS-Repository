@@ -1,0 +1,79 @@
+Scenario: Freight Management System (FMS)
+1. System Overview
+System Purpose:
+The Freight Management System (FMS) is designed to optimize freight operations by providing real-time tracking, load optimization, and streamlined communication between shippers, carriers, and drivers. The goal is to reduce transit times, minimize costs, and ensure compliance with shipping regulations.
+
+Domain/Context:
+The system operates in the logistics and freight transportation industry, supporting trucking companies, shipping firms, and supply chain managers.
+
+Stakeholders:
+
+Logistics coordinators
+Freight brokers
+Drivers and fleet operators
+Warehouse staff
+Customers tracking shipments
+IT and administrative staff
+User Base Characteristics:
+The user base includes hundreds of drivers operating across national and international routes, logistics staff working in hubs and offices, and end customers in diverse geographic locations. The workforce varies in technical skills, requiring both mobile-friendly and desktop interfaces.
+
+2. Functional Requirements
+Core Features:
+
+Load planning and optimization using AI to maximize truck capacity utilization
+Real-time GPS tracking of freight and delivery updates
+Integration with fuel monitoring systems for cost optimization
+Automated scheduling of pickup and delivery slots
+Alerts and notifications for delays, route changes, or regulatory compliance issues
+Frequency of Authentication:
+
+Drivers authenticate once per trip using a mobile app.
+Logistics staff authenticate per session and for high-sensitivity operations.
+Customers authenticate for tracking and notification services.
+Sensitivity of Actions:
+
+High sensitivity: Modifying shipment routes, approving driver assignments, and viewing customer payment information.
+Medium sensitivity: Assigning loads to drivers and accessing shipment details.
+Low sensitivity: Viewing shipment tracking updates and status reports.
+3. Non-Functional Requirements
+Performance:
+
+System must provide real-time location updates with a latency of ≤ 2 seconds.
+Capable of processing up to 20,000 shipments daily.
+Scalability:
+
+Must support a 200% increase in shipments during peak seasons.
+Reliability:
+
+99.9% uptime with automatic failover for GPS and tracking services.
+Data recovery within 15 minutes of an outage.
+Security:
+
+Role-based access controls (RBAC) to prevent unauthorized access.
+End-to-end encryption for all data transmitted between devices and servers.
+Usability:
+
+Mobile-first design for drivers, with intuitive dashboards for logistics staff.
+Support for multiple languages to accommodate diverse user demographics.
+4. Constraints
+Technical Constraints:
+
+Must be compatible with existing telematics hardware used in trucks.
+Limited to integration with specific ERP systems used by shippers and carriers.
+Compliance Requirements:
+
+Adherence to international shipping regulations and customs documentation standards.
+Compliance with data protection laws like GDPR and CCPA.
+Resource Constraints:
+
+Development budget of $3 million, with deployment within 14 months.
+Limited availability of in-house IT staff, requiring third-party support.
+Integration Needs:
+
+Seamless integration with existing route optimization tools and fuel management systems.
+APIs for real-time communication with third-party shipping platforms.
+This scenario provides a realistic and comprehensive outline of a freight management system tailored to the logistics sector.
+
+
+
+
