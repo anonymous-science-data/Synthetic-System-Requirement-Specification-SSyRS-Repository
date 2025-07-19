@@ -1,0 +1,78 @@
+
+Healthcare System Requirements Scenario
+
+1. System Overview
+System Purpose:
+The system is designed to streamline patient data management, optimize appointment scheduling, and enhance communication between healthcare providers and patients. The main objective is to improve patient care by ensuring accurate, accessible, and timely data exchange while reducing administrative burden.
+
+Domain/Context:
+The system operates in the healthcare sector, serving outpatient clinics, hospitals, and telehealth providers.
+
+Stakeholders:
+
+Primary: Physicians, nurses, administrative staff, and patients.
+Secondary: Health insurance companies, compliance officers, and IT support teams.
+User Base Characteristics:
+
+Size: Approximately 10,000 active users, with potential scaling to 50,000 within five years.
+Diversity: Users include medical professionals with varying levels of technical proficiency, administrative staff handling daily operations, and patients ranging from tech-savvy individuals to those needing accessibility accommodations.
+Geographic Distribution: Users are distributed across urban and rural regions within the United States.
+2. Functional Requirements
+Core Features:
+
+Patient Management Module: Secure storage and retrieval of patient records, including medical history, test results, and prescriptions.
+Appointment Scheduling: Automated conflict checks, reminders, and telehealth session integration.
+Communication Tools: HIPAA-compliant messaging and notifications between providers and patients.
+Analytics Dashboard: Data visualization for resource utilization, patient trends, and outcome tracking.
+Frequency of Authentication:
+
+Users authenticate once per session but must reauthenticate for sensitive actions, such as accessing patient records or prescribing medication.
+Sensitivity of Actions:
+
+High Sensitivity: Viewing/editing patient records, prescribing medications, and sharing test results.
+Moderate Sensitivity: Managing appointments and generating reports.
+Low Sensitivity: Viewing general system announcements or non-confidential data.
+3. Non-Functional Requirements
+Performance:
+
+Response time for patient record retrieval should not exceed 2 seconds under normal conditions.
+The system must support at least 500 simultaneous users without performance degradation.
+Scalability:
+
+Designed to accommodate a 5x increase in user base and data volume over the next five years without architectural overhauls.
+Reliability:
+
+99.9% uptime required, with automated failover mechanisms in place for server failures.
+Data recovery processes must ensure restoration within 1 hour of a critical failure.
+Security:
+
+Data encryption both in transit (TLS 1.2 or higher) and at rest (AES-256).
+Role-based access control (RBAC) to ensure users access only the data and functions relevant to their role.
+Multi-factor authentication (MFA) for all users accessing sensitive data.
+Usability:
+
+Intuitive interface with built-in training modules for healthcare providers and administrative staff.
+WCAG 2.1 compliance to ensure accessibility for users with disabilities.
+4. Constraints
+Technical Constraints:
+
+Must integrate with existing hospital electronic health record (EHR) systems, including HL7 and FHIR standards.
+Cloud-based infrastructure hosted on AWS, with compatibility requirements for mobile and desktop platforms.
+Compliance Requirements:
+
+Full adherence to HIPAA regulations for data privacy and security.
+Support for regional data storage mandates, ensuring patient data remains within U.S. borders.
+Resource Constraints:
+
+Development budget capped at $3 million, with a go-live timeline of 18 months.
+Limited in-house technical expertise, requiring external consultants for initial deployment.
+Integration Needs:
+
+Seamless integration with third-party telehealth platforms, existing billing systems, and insurance claim processing tools.
+This scenario captures a realistic and detailed context for a healthcare software system, highlighting challenges and solutions in alignment with industry norms.
+
+
+
+
+
+

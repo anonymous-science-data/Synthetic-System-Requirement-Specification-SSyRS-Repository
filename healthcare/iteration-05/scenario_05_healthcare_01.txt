@@ -1,0 +1,83 @@
+
+Healthcare Software System Requirements Scenario
+1. System Overview
+System Purpose:
+The system, titled "CareLink," is designed to streamline patient information management, appointment scheduling, and care coordination across multi-specialty healthcare facilities. It aims to reduce administrative overhead, improve patient outcomes, and enhance compliance with regulatory requirements.
+
+Domain/Context:
+CareLink operates in the healthcare domain, catering to multi-specialty hospitals, outpatient clinics, and telehealth services.
+
+Stakeholders:
+
+Primary: Healthcare providers (doctors, nurses, administrative staff).
+Secondary: Patients and their families, healthcare regulators, insurance companies, and IT administrators.
+User Base Characteristics:
+The system supports approximately 10,000 daily users, including healthcare professionals across diverse specialties and administrative roles. Users span multiple geographic locations, including urban and rural areas, and have varying levels of technical proficiency.
+
+Operational Environment:
+CareLink is a cloud-based system accessible via desktop and mobile platforms. It is hosted on a secure, HIPAA-compliant cloud infrastructure, with 24/7 accessibility to accommodate different time zones and emergency cases.
+
+Usage Scenarios:
+
+Healthcare Providers: Logging patient details during consultations, prescribing medications, and scheduling follow-ups.
+Administrative Staff: Managing appointment calendars, verifying insurance details, and generating billing statements.
+Patients: Booking appointments, accessing medical records, and communicating with providers through a secure portal.
+2. Functional Requirements
+Core Features:
+
+A centralized electronic health record (EHR) repository with search and filtering capabilities.
+Integrated appointment scheduling with reminders via SMS and email.
+Secure telehealth session setup, including video conferencing.
+Automatic billing and claims processing linked to insurance providers.
+Authentication Conditions & Frequency:
+
+Single Sign-On (SSO) integration for providers, requiring re-authentication every 12 hours or after sensitive actions (e.g., accessing mental health records).
+Patients must authenticate at every login with two-factor authentication (2FA).
+Sensitivity of Actions & Permission Levels:
+
+High Sensitivity: Modifying patient medical records (restricted to physicians).
+Moderate Sensitivity: Viewing diagnostic test results (physicians, nurses).
+Low Sensitivity: Updating demographic details (administrative staff).
+3. Non-Functional Requirements
+Performance:
+The system must respond to user actions within 2 seconds for 95% of interactions, even under peak load conditions.
+
+Scalability:
+CareLink must support up to 50,000 concurrent users with no perceptible performance degradation as additional hospitals and clinics adopt the platform.
+
+Reliability:
+The system requires 99.9% uptime, with automated failover mechanisms to ensure uninterrupted service during outages.
+
+Security:
+All data must be encrypted in transit (TLS 1.3) and at rest (AES-256). Access control policies must comply with HIPAA, limiting data visibility based on role-specific permissions.
+
+Usability:
+The interface must comply with WCAG 2.1 AA standards for accessibility, enabling use by staff with disabilities.
+
+Audit & Monitoring:
+Every login attempt, data access, and modification must be logged. Logs should be retained for 7 years and provide audit trails for regulatory inspections.
+
+4. Constraints
+Technical Constraints:
+
+The system must integrate with existing EHR platforms used by clinics.
+Limited support for legacy operating systems older than Windows 10 or Android 9.
+Compliance Requirements:
+
+Fully comply with HIPAA and GDPR standards.
+Regular vulnerability assessments and penetration testing must be conducted.
+Resource Constraints:
+
+The development budget is capped at $2.5 million, with a 12-month timeline for initial deployment.
+Limited in-house expertise in AI-based decision support systems, requiring third-party consultation.
+Integration Needs:
+
+The system must integrate with existing insurance provider systems and lab diagnostic software.
+API support for future integration with wearable health devices (e.g., smartwatches for vital monitoring).
+This realistic scenario captures the core challenges and requirements of a healthcare software system while aligning with industry standards and constraints.
+
+
+
+
+
+

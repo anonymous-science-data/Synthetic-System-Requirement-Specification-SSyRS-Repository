@@ -1,0 +1,80 @@
+
+Healthcare System Requirements Scenario
+1. System Overview
+System Purpose:
+The system is designed to support chronic disease management by providing a centralized platform for patient monitoring, data collection, and care coordination. Its objectives are to improve patient outcomes through real-time data sharing, reduce hospital readmissions, and enable proactive interventions.
+
+Domain/Context:
+The system operates in the healthcare sector, focusing on chronic conditions such as diabetes, heart disease, and respiratory disorders.
+
+Stakeholders:
+
+Primary: Physicians, care coordinators, and patients with chronic conditions.
+Secondary: Family members, health insurance providers, and compliance officers.
+User Base Characteristics:
+
+Size: Approximately 15,000 active users initially, with an anticipated growth to 50,000 users within five years.
+Diversity: Users include patients with varying levels of tech proficiency, care coordinators managing multiple patients, and physicians requiring advanced analytics.
+Geographic Distribution: System deployment spans urban and rural areas, with specific focus on underserved regions to reduce health disparities.
+2. Functional Requirements
+Core Features:
+
+Remote Patient Monitoring: Integration with wearable devices to track vital signs such as blood pressure, glucose levels, and heart rate.
+Alerts and Notifications: Automated alerts for healthcare providers when patient vitals exceed predefined thresholds.
+Care Plan Management: Tools for creating, updating, and tracking patient-specific care plans.
+Analytics and Reporting: Dashboards for trend analysis and risk stratification.
+Patient Portal: A user-friendly interface for patients to view their data, schedule appointments, and communicate with care teams.
+Frequency of Authentication:
+
+Users authenticate once per session, with session timeouts after 30 minutes of inactivity.
+Sensitive actions, such as updating care plans or accessing historical patient data, require reauthentication.
+Sensitivity of Actions:
+
+High Sensitivity: Modifying care plans, viewing historical patient data, and overriding alert thresholds.
+Moderate Sensitivity: Viewing real-time patient vitals and analytics.
+Low Sensitivity: Accessing educational resources or general system updates.
+3. Non-Functional Requirements
+Performance:
+
+System must process and display real-time vitals data with a latency of no more than 2 seconds.
+Must support at least 1,000 concurrent users during peak times.
+Scalability:
+
+Capable of scaling to support a 5x increase in both users and data volume over five years.
+Reliability:
+
+Uptime of 99.9% with failover mechanisms to handle wearable device integration disruptions.
+Recovery from critical failures within 1 hour to ensure continuity of care.
+Security:
+
+End-to-end encryption of all data, both in transit (TLS 1.3) and at rest (AES-256).
+Role-based access control (RBAC) to limit data access based on user roles.
+Multi-factor authentication (MFA) for all users accessing sensitive data or performing high-sensitivity actions.
+Usability:
+
+Designed for accessibility with WCAG 2.1 compliance, supporting users with visual, cognitive, or physical impairments.
+Includes tutorial modules for patients unfamiliar with technology.
+4. Constraints
+Technical Constraints:
+
+Must integrate with existing EHR systems, as well as popular wearable device APIs (e.g., Apple HealthKit, Fitbit API).
+Cloud-based infrastructure using AWS for scalability and reliability.
+Compliance Requirements:
+
+Full compliance with HIPAA, as well as FDA regulations for software handling medical device data.
+Adherence to data localization laws, ensuring patient data is stored within U.S. borders.
+Resource Constraints:
+
+Budget capped at $4 million for initial development and deployment, with a 20-month timeline.
+Limited availability of in-house staff for integration, necessitating external vendor partnerships.
+Integration Needs:
+
+Seamless integration with telehealth platforms to enable virtual consultations.
+Support for interoperability with health insurance systems to streamline claims processing.
+This scenario presents a realistic healthcare system tailored for chronic disease management, addressing industry challenges, user diversity, and operational constraints.
+
+
+
+
+
+

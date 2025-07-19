@@ -1,0 +1,94 @@
+
+Healthcare Software System Scenario: Patient-Centered Appointment Management System (PCAMS)
+1. System Overview
+System Purpose:
+The Patient-Centered Appointment Management System (PCAMS) aims to streamline appointment scheduling, reduce missed appointments, and enhance patient-provider communication. It is designed to improve patient engagement while optimizing clinic workflows.
+
+Domain/Context:
+PCAMS operates in the outpatient healthcare domain, serving clinics, diagnostic centers, and primary care facilities. The system focuses on improving operational efficiency and enhancing patient satisfaction.
+
+Stakeholders:
+
+Patients: Primary users scheduling, rescheduling, and canceling appointments.
+Healthcare Providers: Physicians, nurses, and administrative staff managing schedules.
+Administrators: Oversee scheduling efficiency, resource allocation, and patient feedback.
+IT Teams: Maintain system functionality, resolve technical issues, and implement updates.
+User Base Characteristics:
+
+A diverse user base comprising approximately 5,000 patients and 200 healthcare staff per facility.
+Patients include individuals of varying ages and technical literacy levels.
+Healthcare staff includes front-desk personnel, clinicians, and schedulers.
+Operational Environment:
+The system is hosted on a secure cloud-based infrastructure accessible via web browsers and mobile applications. It offers offline capabilities for areas with intermittent connectivity.
+
+Usage Scenarios:
+
+A patient books a follow-up appointment using the mobile app.
+Administrative staff adjust a physician's schedule to accommodate urgent cases.
+A physician views their daily schedule, including patient details and medical history.
+Automated reminders are sent to patients to reduce no-shows.
+2. Functional Requirements
+Core Features:
+
+Appointment Scheduling: Allows patients to view and book available time slots.
+Calendar Management: Enables healthcare staff to manage clinic schedules dynamically.
+Automated Notifications: Sends appointment confirmations, reminders, and follow-ups to patients.
+Patient Profiles: Stores basic patient information for quick access during scheduling.
+Feedback Collection: Gathers patient feedback after appointments.
+Authentication Conditions & Frequency:
+
+Patients authenticate once per session, with sessions expiring after 30 minutes of inactivity.
+Healthcare staff authenticate at the start of each shift, with re-authentication required for sensitive actions like modifying another provider's schedule.
+Sensitivity of Actions & Permission Levels:
+
+High Sensitivity: Modifying physician schedules (administrators and managers).
+Medium Sensitivity: Booking appointments for patients (front-desk staff).
+Low Sensitivity: Viewing one's schedule (physicians and patients).
+Permissions ensure actions are role-specific and logged for accountability.
+3. Non-Functional Requirements
+Performance:
+
+Response times for booking or rescheduling appointments must not exceed 2 seconds.
+Supports concurrent usage by up to 500 users per facility during peak hours.
+Scalability:
+
+System must scale to support up to 10,000 patients and 500 staff members per facility over five years.
+Reliability:
+
+Achieve an uptime of 99.95% with automatic failover mechanisms.
+Recovery from minor disruptions within 5 minutes.
+Security:
+
+Implement role-based access control and encrypt patient data at rest and in transit.
+Conduct quarterly vulnerability assessments.
+Usability:
+
+Intuitive interface with minimal learning curve for patients.
+Supports accessibility requirements, including screen readers and multi-language support.
+Audit & Monitoring:
+
+Logs all scheduling and rescheduling actions with timestamps and user details.
+Provides dashboards for tracking no-show trends and schedule adjustments.
+4. Constraints
+Technical Constraints:
+
+Must integrate with existing EHR systems using FHIR standards.
+Offline capabilities must function with local data storage for up to 24 hours.
+Compliance Requirements:
+
+Comply with HIPAA regulations to protect patient data.
+Adhere to accessibility standards such as WCAG for patient-facing interfaces.
+Resource Constraints:
+
+Development budget limited to $2.5 million.
+Deployment across all facilities within 10 months, including staff training and testing.
+Integration Needs:
+
+Seamless integration with third-party calendar systems, EHRs, and notification platforms (e.g., SMS, email).
+This scenario outlines the PCAMS solution with clear alignment to healthcare-specific challenges, operational goals, and compliance requirements, ensuring feasibility and effectiveness in addressing industry needs.
+
+
+
+
+
+
