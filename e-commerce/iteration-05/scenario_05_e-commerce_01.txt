@@ -1,0 +1,96 @@
+
+Scenario: E-Commerce Platform for Sustainable Fashion
+
+1. System Overview
+System Purpose:
+The system aims to provide a seamless e-commerce platform for sustainable fashion brands, enabling customers to discover, compare, and purchase eco-friendly clothing and accessories. The system facilitates transparent supply chain tracking to verify sustainability claims and provides tools for brands to showcase their efforts in ethical production.
+
+Domain/Context:
+The system operates in the e-commerce and sustainable fashion domain, targeting the growing market of environmentally conscious consumers.
+
+Stakeholders:
+
+End-users: Environmentally conscious consumers looking for sustainable fashion options.
+Brands: Small to medium-sized sustainable fashion brands needing an online marketplace.
+Administrators: Platform operators managing content, resolving disputes, and ensuring compliance.
+Third Parties: Payment gateway providers, logistics partners, and sustainability certification bodies.
+User Base Characteristics:
+
+Size: Estimated 200,000 active users in the first year, with expectations of 30% annual growth.
+Diversity: Users vary in age, income, and geographic location, with a concentration in North America and Europe.
+Roles: Customers, brand owners, and administrators.
+Operational Environment:
+The platform is cloud-hosted for global accessibility, with dedicated mobile apps for iOS and Android and a web interface for desktop users.
+
+Usage Scenarios:
+
+Customers browsing categories or searching for specific sustainable fashion items.
+Brand owners uploading products, setting prices, and managing inventory.
+Users verifying product sustainability claims through integrated certification links.
+Administrators moderating disputes, reviewing reports, and ensuring compliance with policies.
+2. Functional Requirements
+Core Features:
+
+Product catalog with detailed filters (e.g., material type, certification, price).
+User accounts for order tracking, wish lists, and product reviews.
+Brand dashboards for inventory and order management.
+Sustainability certification integration to validate claims.
+Payment gateway with support for multiple currencies and payment methods.
+Real-time inventory management and low-stock alerts.
+Personalized recommendations based on user preferences and purchase history.
+Authentication Conditions & Frequency:
+
+User Login: Required for purchases, reviews, and wish list features; sessions expire after 14 days of inactivity.
+Sensitive Actions: Password re-entry required for modifying payment details or deleting an account.
+Sensitivity of Actions & Permission Levels:
+
+Admin Actions: Approving new brands, moderating disputes, accessing detailed reports (high sensitivity).
+Brand Actions: Uploading and managing products, viewing sales analytics (medium sensitivity).
+Customer Actions: Placing orders, modifying personal details (low sensitivity).
+3. Non-Functional Requirements
+Performance:
+
+Page load time: <=2 seconds for 90% of interactions.
+System uptime: 99.9% monthly.
+Scalability:
+
+Support up to 1 million users and 500,000 concurrent transactions without degradation.
+Reliability:
+
+Automatic failover mechanisms in case of server failures.
+Daily automated backups with 30-day retention.
+Security:
+
+End-to-end encryption for all sensitive data transfers.
+Role-based access control for platform features.
+Usability:
+
+Mobile-first design with accessibility standards (WCAG 2.1 AA compliance).
+Guided onboarding for new brand users.
+Audit & Monitoring:
+
+Comprehensive logging of all administrative actions and suspicious activities.
+Real-time monitoring of payment transactions for fraud detection.
+4. Constraints
+Technical Constraints:
+
+Hosted on AWS with specific service dependencies (e.g., S3 for storage, Lambda for serverless functions).
+Compatibility with widely used web browsers and mobile operating systems.
+Compliance Requirements:
+
+GDPR compliance for user data within the EU.
+Integration with third-party certification bodies recognized in the sustainable fashion industry.
+Resource Constraints:
+
+Initial development budget capped at $500,000.
+Development team limited to 10 members.
+Integration Needs:
+
+Integration with Stripe for payments, DHL for logistics, and APIs from sustainability certifiers (e.g., GOTS, Fair Trade).
+This scenario outlines a comprehensive, realistic system in the e-commerce domain, tailored for the sustainable fashion niche.
+
+
+
+
+
+
