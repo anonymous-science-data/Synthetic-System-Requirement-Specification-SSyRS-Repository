@@ -1,0 +1,91 @@
+
+1. System Overview
+System Purpose:
+The system, SkillTrack, is designed to support vocational training institutions by providing a unified platform for managing student progress, certifications, and skill-based assessments. Its primary objective is to streamline skill development tracking and improve employability by bridging the gap between training outcomes and employer expectations.
+
+Domain/Context:
+Vocational education and training (VET) sector, focusing on hands-on learning and skill acquisition for technical and trade professions.
+
+Stakeholders:
+
+Primary Users: Instructors, students, and institution administrators.
+Secondary Users: Employers seeking qualified candidates and accreditation bodies monitoring compliance.
+Beneficiaries: Students aiming to enter the workforce and training institutions striving to improve outcomes.
+User Base Characteristics:
+
+Size: Approximately 15,000 users (10,000 students, 3,000 employers, 2,000 instructors and administrators).
+Diversity: Users range from young adults to mid-career professionals, with varying levels of digital literacy.
+Geographic Distribution: Users are distributed across multiple training centers in a large metropolitan region.
+Operational Environment:
+The platform is hosted on a cloud-based infrastructure to support remote and on-site usage. Students and instructors access the platform through a web portal, while administrators and employers utilize dedicated dashboards.
+
+Usage Scenarios:
+
+Students: Submit project work, access digital learning materials, and track skill assessments against industry benchmarks.
+Instructors: Evaluate student performance through real-time grading tools and generate personalized feedback reports.
+Administrators: Monitor institution-wide performance, manage course schedules, and ensure accreditation compliance.
+Employers: Search for candidates meeting specific skill criteria and verify certifications issued by the platform.
+2. Functional Requirements
+Core Features:
+
+Digital Portfolio: A repository for students to showcase their projects and certifications to potential employers.
+Skill Assessment Tools: Real-time evaluation of hands-on activities using rubrics aligned with industry standards.
+Certification Management: Automatic issuance and validation of digital certificates upon course completion.
+Employer Portal: A searchable database for employers to identify and contact candidates.
+Compliance Dashboard: Tools for administrators to generate reports and ensure regulatory compliance.
+Learning Resource Library: Centralized access to instructional videos, documents, and other training materials.
+Authentication Conditions & Frequency:
+
+Session Expiration: Users authenticate once per session, with sessions expiring after 8 hours of inactivity.
+Sensitive Actions: Re-authentication is required when publishing certifications, altering assessment rubrics, or accessing compliance reports.
+Sensitivity of Actions & Permission Levels:
+
+Highly Sensitive: Certification issuance, compliance report access (restricted to administrators).
+Moderately Sensitive: Assessment grading, rubric modifications (restricted to instructors).
+Low Sensitivity: Access to learning resources and student portfolios (open to respective users).
+3. Non-Functional Requirements
+Performance:
+
+Response times under 1.5 seconds for 90% of actions, even during peak usage (e.g., certification issuance at term-end).
+Scalability:
+
+Capable of supporting up to 25,000 users within 3 years without requiring significant infrastructure changes.
+Reliability:
+
+99.95% uptime, with automated recovery protocols ensuring data integrity in the event of system failures.
+Security:
+
+End-to-end encryption for all data exchanges.
+Role-based access control with audit trails for sensitive actions.
+Usability:
+
+Mobile-first design to accommodate users with limited access to desktop devices.
+WCAG 2.1 AA compliance for accessibility.
+Audit & Monitoring:
+
+Detailed logging of all user actions, especially those involving certifications and assessments.
+Weekly usage analytics provided to administrators.
+4. Constraints
+Technical Constraints:
+
+Integration with legacy systems used by some institutions for student information management.
+Cloud hosting limited to providers compliant with local data residency regulations.
+Compliance Requirements:
+
+Adherence to FERPA and state-specific vocational training regulations.
+Certification formats must align with industry accreditation standards.
+Resource Constraints:
+
+Initial budget of $1.5 million, with a team of 10 developers, 3 QA engineers, and 2 project managers.
+Development timeline of 12 months, with a phased rollout starting in the 10th month.
+Integration Needs:
+
+Integration with third-party tools like LinkedIn for sharing certifications.
+API support for employers to integrate candidate search with their HR systems.
+Final Completeness Check:
+This scenario is distinct, realistic, and explores objectives, configurations, and challenges unique to vocational education, ensuring a coherent and feasible system design.
+
+
+
+
+

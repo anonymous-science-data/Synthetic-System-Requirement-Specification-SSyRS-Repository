@@ -1,0 +1,94 @@
+
+Scenario: Education Software System - Digital Assessment and Learning Analytics Platform
+1. System Overview
+System Purpose:
+The system aims to streamline digital assessments, provide actionable learning analytics, and enhance the personalization of student learning experiences. It will facilitate efficient exam management, automated grading, and data-driven insights to improve student outcomes and institutional performance.
+
+Domain/Context:
+The system operates within the education sector, serving primary, secondary, and higher education institutions.
+
+Stakeholders:
+
+Students: End-users who take assessments and view performance feedback.
+Teachers/Instructors: Key users who create and manage assessments, track progress, and analyze student data.
+Administrators: Manage institution-wide configurations, user roles, and access control.
+Parents/Guardians: View reports for K-12 students.
+IT Teams: Maintain the system's infrastructure and ensure seamless operation.
+User Base Characteristics:
+
+Approximately 100,000 active users at launch, scaling up to 500,000 within two years.
+Includes diverse roles: 70% students, 20% teachers, 5% administrators, and 5% parents.
+Users span multiple geographic regions, primarily within urban and suburban areas.
+Operational Environment:
+
+A cloud-hosted platform accessible via web and mobile applications.
+Compatible with commonly used devices such as laptops, tablets, and smartphones.
+Usage Scenarios:
+
+Students: Log in to take assessments, review feedback, and track progress.
+Teachers: Create question banks, schedule assessments, and monitor class-wide performance trends.
+Administrators: Manage roles, enforce institution-wide policies, and audit usage reports.
+2. Functional Requirements
+Core Features:
+
+Assessment Management: Tools for creating, scheduling, and distributing online exams.
+Automated Grading: AI-driven grading for objective questions and semi-automated workflows for subjective questions.
+Learning Analytics: Dashboards showing performance trends, progress metrics, and predictive insights for personalized learning.
+Reporting Tools: Customizable reports for stakeholders, including export options in multiple formats.
+Integration Capabilities: Compatibility with existing Learning Management Systems (LMS) like Canvas or Moodle.
+Authentication Conditions & Frequency:
+
+Users must authenticate at the beginning of each session.
+Re-authentication is required after 30 minutes of inactivity or for sensitive actions such as exporting reports or changing account settings.
+Sensitivity of Actions & Permission Levels:
+
+Low Sensitivity: Viewing assessments and individual student data (accessible by students and teachers).
+Medium Sensitivity: Creating assessments, modifying grades, or accessing aggregated analytics (teachers and administrators).
+High Sensitivity: Configuring institution-wide policies, managing user roles, and viewing audit logs (administrators).
+3. Non-Functional Requirements
+Performance:
+
+The system must handle up to 10,000 concurrent users with an average response time of less than 2 seconds.
+Scalability:
+
+Must support a 5x increase in active users within two years with minimal degradation in performance.
+Reliability:
+
+99.9% uptime with failover mechanisms in place to minimize disruption.
+Automated backups conducted daily, with data retention for up to 5 years.
+Security:
+
+End-to-end encryption for data in transit and at rest.
+Role-based access control (RBAC) to ensure appropriate access levels.
+Usability:
+
+Must comply with WCAG 2.1 Level AA for accessibility.
+Provide multilingual support for three major languages at launch (English, Spanish, French).
+Audit & Monitoring:
+
+Detailed logging of user actions, including login attempts, data exports, and role changes.
+Administrators must be able to generate audit reports within 24 hours of request.
+4. Constraints
+Technical Constraints:
+
+Hosted on AWS infrastructure using a microservices architecture.
+Frontend must be compatible with modern web browsers (Chrome, Firefox, Edge) and support Android and iOS mobile platforms.
+Compliance Requirements:
+
+Adherence to GDPR, FERPA, and other regional data protection regulations.
+Retention and deletion policies for user data as per regulatory standards.
+Resource Constraints:
+
+Budget capped at $2 million for development and implementation.
+Development team of 15 members, including frontend/backend developers, data scientists, and QA engineers.
+Timeline of 18 months, including 3 months for testing and stakeholder feedback integration.
+Integration Needs:
+
+Seamless data exchange with existing LMS platforms via standardized APIs.
+Compatibility with institutional Single Sign-On (SSO) systems for user authentication.
+This scenario reflects a realistic and well-structured approach to designing and implementing a digital assessment and learning analytics platform, adhering to industry-specific challenges and goals.
+
+
+
+
+

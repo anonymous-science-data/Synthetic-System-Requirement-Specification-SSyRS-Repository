@@ -1,0 +1,85 @@
+
+Scenario: Digital Assessment and Feedback System (DAFS)
+
+1. System Overview
+System Purpose:
+The Digital Assessment and Feedback System (DAFS) aims to streamline the process of creating, managing, and analyzing assessments in educational institutions. The system provides advanced analytics for performance tracking and offers instant, personalized feedback to students, fostering continuous improvement and engagement.
+
+Domain/Context:
+This system operates within the education sector, focusing on K-12 schools, higher education, and professional certification programs.
+
+Stakeholders:
+
+Educators (design assessments, monitor performance, and provide feedback).
+Students (complete assessments and receive real-time feedback).
+Administrators (track overall assessment metrics and institutional performance).
+Parents (monitor student progress and assessment outcomes).
+IT staff (ensure system reliability, security, and compliance).
+User Base Characteristics:
+
+Size: Designed for institutions ranging from small schools with fewer than 500 students to large universities with 50,000+ users.
+Diversity: Includes users with varying levels of digital proficiency and accessibility needs.
+Geographic Distribution: Supports institutions with global reach, requiring multilingual and multicultural adaptability.
+Roles: Students, educators, administrators, IT staff, and parents.
+2. Functional Requirements
+Core Features:
+
+Tools for creating various assessment types (e.g., quizzes, essays, and practical tests).
+AI-driven automatic grading for objective assessments and suggestions for subjective assessments.
+Real-time feedback generation with actionable improvement tips.
+Detailed analytics for educators and administrators to identify trends and gaps in learning.
+Secure, timed examination modes with proctoring features.
+Mobile-friendly interface for accessing assessments and results.
+Frequency of Authentication:
+
+Mandatory authentication at the beginning of each session, with optional two-factor authentication for sensitive tasks such as accessing assessment data or proctoring settings.
+Sensitivity of Actions:
+
+High Sensitivity: Modifying assessment data, accessing student analytics, and proctoring controls.
+Medium Sensitivity: Creating or editing assessments.
+Low Sensitivity: Viewing publicly shared study resources or practice tests.
+3. Non-Functional Requirements
+Performance:
+
+Response times of under 2 seconds for assessment submissions and feedback delivery.
+Capable of handling 10,000 concurrent users during peak testing periods.
+Scalability:
+
+Cloud-based infrastructure to scale dynamically during high-demand periods such as midterms and finals.
+Reliability:
+
+99.9% uptime with backup and recovery systems ensuring minimal disruption.
+Fault-tolerant mechanisms to ensure assessment progress is saved even during system outages.
+Security:
+
+Encryption for data at rest and in transit.
+Strict role-based access controls with audit logs for sensitive actions.
+Compliance with data protection laws such as GDPR, FERPA, and COPPA.
+Usability:
+
+User-friendly interfaces designed for both desktop and mobile platforms.
+Accessibility features, including text-to-speech, screen readers, and adjustable UI elements.
+Comprehensive user guides and tutorials for first-time users.
+4. Constraints
+Technical Constraints:
+
+Must integrate seamlessly with existing LMS platforms (e.g., Moodle, Blackboard).
+Requires compatibility with major web browsers and operating systems.
+Compliance Requirements:
+
+Adherence to GDPR, FERPA, and COPPA regulations.
+Support for localization in at least 10 languages, including right-to-left scripts.
+Resource Constraints:
+
+Initial budget of $2.5 million with a development timeline of 14 months.
+Core development team capped at 10 members during initial phases.
+Integration Needs:
+
+API compatibility with third-party proctoring tools and grading systems.
+Data export and reporting features for integration with external analytics platforms.
+This scenario describes a system tailored to address the growing demand for digital assessments and feedback in education, ensuring scalability, usability, and compliance.
+
+
+
+
+

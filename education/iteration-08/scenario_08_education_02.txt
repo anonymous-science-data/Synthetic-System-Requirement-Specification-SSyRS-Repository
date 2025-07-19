@@ -1,0 +1,94 @@
+
+Education Software System Scenario: "EduCareer Pathway Tracker"
+1. System Overview
+System Purpose:
+The "EduCareer Pathway Tracker" is designed to help high school students and career counselors collaboratively plan, monitor, and adjust academic and career pathways. The system integrates academic performance data, career interest surveys, and labor market trends to create personalized recommendations for students.
+
+Domain/Context:
+Secondary education with a focus on career readiness and post-graduation planning, targeting schools aiming to improve career-oriented outcomes.
+
+Stakeholders:
+
+Students: Primary users planning academic and career goals.
+Counselors: Support and guide students using system insights and reporting tools.
+Parents: Monitor student progress and engagement with career goals.
+School Administrators: Analyze trends and ensure program effectiveness.
+IT Support Teams: Oversee system maintenance and ensure secure operation.
+User Base Characteristics:
+
+Approximately 3,000 students, 50 counselors, and 500 parents per institution, supporting 30 initial pilot schools.
+Diverse demographic and geographic distribution, including urban, suburban, and rural schools.
+Users span roles with distinct permissions and access levels.
+Operational Environment:
+The system is hosted on a hybrid architecture, combining cloud-based services for scalability and on-premise solutions for data security in schools with stricter privacy regulations. Accessible via desktop, tablets, and mobile apps.
+
+Usage Scenarios:
+
+Students update their academic and career goals, view suggested pathways, and track milestones.
+Counselors review students' profiles, suggest modifications to plans, and schedule consultations.
+Parents log in to view their child's progress and receive automated reports.
+Administrators generate aggregate reports on career readiness trends across the school.
+2. Functional Requirements
+Core Features:
+
+Pathway Planning: Tools for students to select career goals, view academic requirements, and explore alternate options.
+Career Assessment Integration: Integration with interest and aptitude tests to suggest career matches.
+Real-Time Progress Tracking: Dashboards showing completed milestones, grades, and plan adherence.
+Counselor Support Tools: Scheduling, communication, and report generation for counselors.
+Data-Driven Recommendations: Suggestions based on academic performance, student interests, and labor market data.
+Authentication Conditions & Frequency:
+
+Users authenticate once per session, with a session timeout after 20 minutes of inactivity.
+Sensitive actions like altering a student's pathway require re-authentication.
+Sensitivity of Actions & Permission Levels:
+
+High Sensitivity: Altering system-wide configurations or exporting sensitive data (Administrators).
+Moderate Sensitivity: Modifying student plans and accessing performance analytics (Counselors).
+Low Sensitivity: Viewing career pathways and progress dashboards (Students, Parents).
+3. Non-Functional Requirements
+Performance:
+
+Response time under 1.5 seconds for 85% of interactions.
+Supports up to 5,000 concurrent users during peak periods (e.g., school counseling weeks).
+Scalability:
+
+Expandable to serve up to 200 schools and 1 million users within five years, using cloud resources for dynamic scaling.
+Reliability:
+
+99.9% uptime, with backup systems for data and operational continuity during outages.
+Security:
+
+Role-based access control to ensure data integrity and privacy.
+Encryption of all sensitive data at rest and in transit.
+Usability:
+
+Intuitive interfaces with tailored user flows for students, parents, counselors, and administrators.
+Localization in three primary languages (English, Spanish, French).
+Audit & Monitoring:
+
+Logs for all user actions, especially pathway modifications and data exports.
+Automated alerts for unusual access patterns or unauthorized actions.
+4. Constraints
+Technical Constraints:
+
+Must integrate with legacy Student Information Systems (SIS) and career testing platforms.
+Operates on existing school hardware, which includes older systems with limited processing power.
+Compliance Requirements:
+
+Adheres to FERPA regulations for student data privacy.
+Regional compliance for schools in jurisdictions with stricter data residency laws.
+Resource Constraints:
+
+Development budget of $3 million, including pilot deployment, training, and scaling infrastructure.
+A 30-month development timeline with 6 months for testing, piloting, and user feedback.
+Integration Needs:
+
+Real-time synchronization with SIS for academic data updates.
+APIs to pull labor market insights and integrate career interest surveys.
+This scenario presents a robust, scalable, and compliant career tracking system tailored for secondary schools, balancing technical feasibility with education-specific needs.
+
+
+
+
+
+

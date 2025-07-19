@@ -1,0 +1,91 @@
+
+1. System Overview
+System Purpose:
+The system, EduTrack Insights, is designed for higher education institutions to optimize student retention and success. Its primary objectives are to identify at-risk students through predictive analytics, provide personalized interventions, and streamline academic advising processes.
+
+Domain/Context:
+Higher education, focusing on undergraduate and graduate programs across multiple disciplines in a large university or college network.
+
+Stakeholders:
+
+Primary Users: Academic advisors, students, and faculty members.
+Secondary Users: University administrators and student success coordinators.
+Beneficiaries: Students aiming to achieve academic goals and universities striving to improve retention rates and graduation outcomes.
+User Base Characteristics:
+
+Size: Approximately 50,000 users (40,000 students, 8,000 faculty and staff, 2,000 administrators).
+Diversity: Includes domestic and international students, varying technical skills, and multiple academic disciplines.
+Geographic Distribution: Students and staff are distributed across multiple campuses and online learning environments.
+Operational Environment:
+The system is cloud-based, enabling seamless access across devices including desktops, laptops, and mobile phones. Faculty and staff interact via specialized dashboards, while students access a simplified portal.
+
+Usage Scenarios:
+
+Students: Monitor academic progress, receive tailored intervention plans, and schedule meetings with advisors.
+Advisors: Use predictive models to identify at-risk students and create personalized intervention strategies.
+Faculty Members: Input grades, attendance, and other performance indicators to support early risk detection.
+Administrators: Analyze aggregated data on retention rates and academic success to refine institutional strategies.
+2. Functional Requirements
+Core Features:
+
+Predictive Analytics Dashboard: Provides advisors with insights into at-risk students based on academic performance, attendance, and engagement metrics.
+Personalized Intervention Plans: Generates tailored action steps for students, including tutoring recommendations and study resources.
+Advising Scheduler: Simplifies scheduling between students and academic advisors.
+Student Progress Portal: Displays real-time academic performance and intervention suggestions to students.
+Administrative Reporting Tools: Aggregates data for retention analysis, allowing administrators to make informed decisions.
+Notification System: Sends reminders for upcoming deadlines, advisor meetings, and intervention activities.
+Authentication Conditions & Frequency:
+
+Session Expiration: Users authenticate once per session, with sessions expiring after 10 hours of inactivity.
+Sensitive Actions: Re-authentication is required for submitting final grades, accessing aggregated institutional reports, and making changes to predictive model parameters.
+Sensitivity of Actions & Permission Levels:
+
+Highly Sensitive: Predictive model adjustments, institutional report generation (restricted to administrators).
+Moderately Sensitive: Intervention plan creation and final grade submissions (restricted to advisors and faculty).
+Low Sensitivity: Viewing personal academic progress and scheduling advising sessions (open to students).
+3. Non-Functional Requirements
+Performance:
+
+Average response time of 2 seconds for 95% of actions, including large data queries for predictive analytics.
+Scalability:
+
+Capable of supporting up to 80,000 users within five years without significant performance degradation.
+Reliability:
+
+99.9% uptime with failover systems ensuring minimal disruption in case of server outages.
+Security:
+
+All data is encrypted during transmission and at rest.
+Role-based access control ensures users can only access data relevant to their roles.
+Usability:
+
+User interfaces designed for simplicity, meeting WCAG 2.1 AA accessibility standards.
+Multi-language support for students from diverse backgrounds.
+Audit & Monitoring:
+
+Logs all access and changes to sensitive data, such as predictive model configurations and grade submissions.
+Weekly usage reports provided to administrators for monitoring system adoption.
+4. Constraints
+Technical Constraints:
+
+Existing student information systems (SIS) must integrate seamlessly with the platform to ensure up-to-date data synchronization.
+Cloud hosting limited to providers compliant with institutional data residency requirements.
+Compliance Requirements:
+
+Adherence to FERPA and other higher education data privacy regulations.
+Analytics and reporting must align with accreditation standards and institutional policies.
+Resource Constraints:
+
+Initial budget of $5 million, with a team of 20 developers, 5 data scientists, and 5 project managers.
+Development timeline of 18 months, with an additional 6-month pilot phase at two campuses.
+Integration Needs:
+
+Integration with existing learning management systems (LMS) and SIS platforms for real-time data updates.
+API capabilities for third-party tools used by advisors and administrators.
+Final Completeness Check:
+This scenario provides a distinct, realistic, and coherent exploration of objectives, configurations, and challenges specific to higher education retention efforts. It is logically aligned with the domain and technically feasible.
+
+
+
+
+

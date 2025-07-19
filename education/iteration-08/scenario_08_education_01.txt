@@ -1,0 +1,94 @@
+
+Education Software System Scenario
+1. System Overview
+System Purpose:
+The system, "EduEngage LMS," aims to streamline the management and delivery of learning materials, assessments, and real-time interactions for secondary school students and teachers. It integrates educational content, tracks progress, and facilitates teacher-student engagement through personalized dashboards and analytics.
+
+Domain/Context:
+Secondary education, focusing on a hybrid learning model to support in-person and remote teaching.
+
+Stakeholders:
+
+Teachers: Manage course materials, assessments, and student progress.
+Students: Access learning resources, submit assignments, and participate in discussions.
+School Administrators: Monitor system-wide usage, compliance, and performance.
+Parents: View reports on student progress and attendance.
+IT Support Team: Manage system maintenance and troubleshoot technical issues.
+User Base Characteristics:
+
+Approximately 2,000 students and 200 teachers per institution, with 50 institutions initially adopting the system.
+Geographically diverse, supporting rural and urban schools.
+User roles include students, teachers, administrators, and parents, each requiring different permission levels.
+Operational Environment:
+Cloud-based solution with a responsive web interface and mobile apps for Android and iOS. Designed for high availability and low-latency access in areas with intermittent internet connectivity.
+
+Usage Scenarios:
+
+Teachers uploading course materials and setting deadlines for assignments.
+Students accessing learning modules and submitting assignments.
+Parents reviewing attendance reports and academic performance summaries.
+Administrators generating school-wide usage and performance analytics.
+2. Functional Requirements
+Core Features:
+
+Content Management: Teachers can upload, organize, and schedule access to course materials.
+Assessment Tools: Online quizzes, assignments, and grading functionality.
+Communication: Real-time chat and discussion forums for students and teachers.
+Analytics: Dashboards for progress tracking, attendance, and performance metrics.
+Multi-Language Support: Localization for diverse language preferences.
+Authentication Conditions & Frequency:
+
+Users must authenticate at the start of each session, with automatic logout after 30 minutes of inactivity.
+Sensitive actions (e.g., modifying grades, accessing student records) require re-authentication.
+Sensitivity of Actions & Permission Levels:
+
+High Sensitivity: Grade modification, financial data access (Administrators).
+Moderate Sensitivity: Assignment submissions, attendance tracking (Teachers).
+Low Sensitivity: Viewing learning content and progress reports (Students, Parents).
+3. Non-Functional Requirements
+Performance:
+
+Response times under 2 seconds for 90% of user interactions.
+Support for simultaneous use by up to 10,000 concurrent users.
+Scalability:
+
+Modular architecture to support up to 100 institutions and 500,000 users without performance degradation.
+Reliability:
+
+99.95% uptime, with automatic failover to backup servers during outages.
+Security:
+
+Data encryption for all stored and transmitted data.
+Role-based access control (RBAC) to restrict access to sensitive data.
+Usability:
+
+WCAG 2.1 compliance for accessibility.
+User-friendly interfaces with minimal training required for onboarding.
+Audit & Monitoring:
+
+Logging of all authentication events and sensitive actions, with tamper-evident logs.
+Alerts for unusual activity, such as failed authentication attempts or data exports.
+4. Constraints
+Technical Constraints:
+
+Must be compatible with existing school infrastructure, including older devices and limited bandwidth environments.
+Cloud infrastructure must use AWS or Azure for hosting.
+Compliance Requirements:
+
+Adherence to GDPR for student data privacy.
+Local educational data policies for different regions.
+Resource Constraints:
+
+Budget cap of $2.5 million for initial development and deployment.
+Development timeline of 18 months, with a six-month buffer for testing and pilot implementation.
+Integration Needs:
+
+Integration with existing Student Information Systems (SIS) for seamless user data synchronization.
+Support for Single Sign-On (SSO) with institutional credentials.
+This scenario reflects a realistic, scalable implementation of an educational software system tailored to address the operational and technical needs of secondary schools while adhering to strict resource and compliance constraints.
+
+
+
+
+
+

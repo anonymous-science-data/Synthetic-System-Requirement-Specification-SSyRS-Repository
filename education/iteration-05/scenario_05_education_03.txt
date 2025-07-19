@@ -1,0 +1,102 @@
+
+Scenario: Digital Collaborative Learning Platform for K-12 Schools
+1. System Overview
+System Purpose:
+The system is designed to enhance collaborative learning in K-12 schools by providing a digital platform for students and teachers to interact, share resources, and track progress. The goal is to foster peer-to-peer engagement, enable teacher-guided group projects, and provide administrators with insights into school-wide academic performance.
+
+Domain/Context:
+The system operates within the K-12 education sector, catering to public and private schools. It focuses on improving student engagement and teacher efficiency in managing collaborative projects and academic assessments.
+
+Stakeholders:
+
+Students: Utilize the platform to collaborate on group projects, participate in discussions, and access study materials.
+Teachers: Oversee group activities, manage assignments, and track student participation and performance.
+School Administrators: Monitor system usage, generate academic reports, and ensure compliance with educational standards.
+Parents: View progress reports and receive notifications about their child's activities.
+IT Support Teams: Handle system deployment, maintenance, and technical support.
+User Base Characteristics:
+
+Size: Scalable for schools with 500 to 10,000 students.
+Diversity: Includes students with different learning styles, teachers with varying tech proficiency, and parents with diverse expectations.
+Geographic Distribution: Primarily local or regional, with some usage by remote learners in blended or online programs.
+Roles: Students, teachers, administrators, and parents.
+Operational Environment:
+
+Hosted on a cloud-based infrastructure for secure and scalable access.
+Accessible through web browsers and mobile applications for iOS and Android.
+Includes offline capabilities for students in low-connectivity areas, with data syncing upon reconnection.
+Usage Scenarios:
+
+Students: Collaborate on group projects, submit assignments, and participate in teacher-moderated forums.
+Teachers: Create and assign group projects, evaluate student contributions, and provide feedback.
+Administrators: Generate school-wide academic reports and track usage metrics.
+Parents: Review their child's academic activities and receive alerts for critical updates.
+2. Functional Requirements
+Core Features:
+
+Group collaboration tools with file sharing, discussion threads, and task tracking.
+Student dashboards with assignment timelines, project status, and personalized feedback.
+Teacher dashboards for project setup, progress tracking, and performance analysis.
+Notification system for important updates, such as submission deadlines and new assignments.
+Reporting tools for administrators to analyze performance trends at class, grade, and school levels.
+Authentication Conditions & Frequency:
+
+Single sign-on (SSO) for all users, integrated with school identity management systems.
+Students and teachers authenticate once per session, with sessions expiring after 30 minutes of inactivity.
+Administrators and IT staff must use multi-factor authentication (MFA) for system-level access.
+Sensitivity of Actions & Permission Levels:
+
+High Sensitivity: Modifying system configurations, accessible only to IT staff and administrators.
+Moderate Sensitivity: Assigning and grading projects, limited to teachers.
+Low Sensitivity: Viewing personal dashboards and general announcements, accessible to students and parents.
+3. Non-Functional Requirements
+Performance:
+
+Average response time of <2 seconds for common tasks, such as opening dashboards or submitting assignments.
+Supports up to 2,000 concurrent users per school without degradation.
+Scalability:
+
+Designed to scale horizontally to support up to 100,000 users across multiple schools.
+Allows easy addition of new features and modules without affecting core functionality.
+Reliability:
+
+99.9% uptime, with regular backups and a failover mechanism for critical services.
+Error recovery within 5 minutes for system-critical issues.
+Security:
+
+End-to-end encryption for all data in transit and at rest.
+Role-based access controls with detailed logging of sensitive operations.
+Annual security audits and penetration testing to ensure data protection.
+Usability:
+
+User-friendly interfaces tailored for non-technical users, with accessibility features such as text-to-speech and high-contrast themes.
+Multilingual support for diverse user bases.
+Audit & Monitoring:
+
+Real-time logging of all user activities, with alerts for suspicious behaviors such as failed login attempts.
+Comprehensive reporting tools for administrators to review usage trends and identify potential security issues.
+4. Constraints
+Technical Constraints:
+
+Must integrate with existing school infrastructure, including Student Information Systems (SIS) and Learning Management Systems (LMS).
+Designed to work on low-spec devices, such as Chromebooks and older smartphones.
+Compliance Requirements:
+
+Adheres to FERPA for U.S. schools, ensuring student data privacy.
+GDPR compliance for international schools.
+Resource Constraints:
+
+Initial development budget capped at $1 million.
+18-month development timeline, with a team of 15 developers and QA specialists.
+Integration Needs:
+
+Requires seamless integration with popular LMS platforms like Google Classroom and Canvas.
+API support for third-party tools such as plagiarism checkers and content libraries.
+This scenario reflects realistic challenges and solutions for a collaborative learning platform in K-12 education, addressing the needs of various stakeholders while considering operational and technical constraints.
+
+
+
+
+
+
+
