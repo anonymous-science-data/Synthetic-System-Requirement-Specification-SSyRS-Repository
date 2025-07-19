@@ -1,0 +1,80 @@
+
+Media and Entertainment System Scenario
+1. System Overview
+System Purpose:
+The system, called LiveSync Creator, is designed to enable synchronized live editing and collaboration for media production teams working on live events, such as sports broadcasts, music concerts, and award shows. The goal is to provide a centralized platform for real-time content editing, post-event processing, and immediate distribution to digital platforms.
+
+Domain/Context:
+The system operates in the Media and Entertainment industry, specifically catering to live event production and broadcasting.
+
+Stakeholders:
+
+Live Event Producers: Oversee event production and manage content delivery timelines.
+Editors: Edit content live or immediately post-event for digital or broadcast delivery.
+Social Media Managers: Extract and distribute short-form content during events.
+Broadcasters: Ensure content is delivered with minimal delay to meet audience expectations.
+User Base Characteristics:
+
+Size: Initial deployment for 1,500 active users, scaling to 5,000 users in subsequent phases.
+Diversity: Users include live production teams, editors, and broadcasters with varied technical expertise.
+Geographic Distribution: Predominantly North America, Europe, and Asia-Pacific, with global scalability for multinational broadcasting companies.
+Roles: Producers, editors, broadcasters, and social media managers.
+2. Functional Requirements
+Core Features:
+
+Real-Time Video Editing: Tools for cutting, adding overlays, and basic effects during live broadcasts.
+Content Segmentation: Ability to segment live streams into short clips for immediate sharing.
+Multi-Device Support: Compatibility with desktops, tablets, and mobile devices for editing and monitoring.
+Live Collaboration: Shared workspaces allowing multiple users to work on the same event timeline simultaneously.
+Cloud-Based Archive: Automatic storage of live-streamed content for future editing or reference.
+Frequency of Authentication:
+Single sign-on (SSO) required per session, with re-authentication needed for accessing archived content or performing administrative tasks.
+
+Sensitivity of Actions:
+
+High Sensitivity: Deleting archived footage, altering master event files, and granting access to new team members (requires multi-factor authentication).
+Moderate Sensitivity: Editing content live, exporting clips, or sharing timelines (requires role-based access control).
+3. Non-Functional Requirements
+Performance:
+
+Live editing tools must respond within 500ms to ensure seamless real-time operation.
+Content segmentation and clip generation should process within 2 seconds for a 30-second clip.
+Scalability:
+Support for up to 10 simultaneous live productions and 20,000 viewers for event streams within three years.
+
+Reliability:
+
+System uptime of 99.9%.
+Automatic failover in under 10 seconds in case of server failure during live editing.
+Security:
+
+End-to-end encryption of live streams and stored archives.
+Compliance with regional data storage regulations, including GDPR and CCPA.
+Fine-grained access control for roles and permissions.
+Usability:
+
+Intuitive drag-and-drop editing interface for users with minimal training (target training time: <=1 hour).
+Localization support for 5 languages (English, Spanish, French, German, Mandarin).
+4. Constraints
+Technical Constraints:
+
+Must operate on a hybrid cloud infrastructure for real-time performance and data redundancy.
+Requires integration with popular streaming platforms (e.g., YouTube Live, Facebook Live, Twitch).
+Compliance Requirements:
+
+Adherence to GDPR and CCPA regulations for user data and content storage.
+Ensure compliance with broadcasting content rights and intellectual property laws.
+Resource Constraints:
+
+Budget: $4M for initial development, with annual operational costs capped at $1.5M.
+Staffing: Development team of 20 engineers, 3 UI/UX designers, and 4 QA specialists.
+Timeline: Beta release within 14 months, full production launch within 20 months.
+Integration Needs:
+
+Seamless integration with existing production systems, such as media asset management (MAM) tools.
+Support for authentication protocols such as OAuth and SAML for user management.
+
+
+
+
+

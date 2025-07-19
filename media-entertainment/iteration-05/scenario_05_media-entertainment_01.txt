@@ -1,0 +1,91 @@
+
+Media and Entertainment Software System Scenario
+1. System Overview
+System Purpose:
+The system, "Spotlight Analytics," aims to provide advanced analytics and insights for streaming platforms to help content creators, production houses, and distributors make data-driven decisions about content development, licensing, and audience engagement.
+
+Domain/Context:
+Media and Entertainment, specifically catering to the video streaming and digital content distribution sector.
+
+Stakeholders:
+
+Content Creators: Independent creators, studios, and production houses looking to understand audience preferences.
+Streaming Platform Executives: Decision-makers responsible for licensing and curating content.
+Marketers: Focused on audience segmentation and campaign performance.
+Data Analysts: Using the platform for detailed reporting and data-driven strategies.
+User Base Characteristics:
+The system targets mid-to-large streaming platforms with a user base distributed globally. Users include technical analysts (data-heavy roles), non-technical managers (overview insights), and external partners (limited access for shared data). Estimated daily active users: ~10,000.
+
+Operational Environment:
+The system is cloud-based, leveraging a SaaS model with browser access and dedicated mobile apps for on-the-go insights. It operates on a scalable architecture hosted on AWS.
+
+Usage Scenarios:
+
+A studio analyst logs in to view weekly engagement trends for their licensed titles.
+A marketing manager uses predictive analytics to segment audiences for an upcoming campaign.
+An executive reviews real-time performance dashboards to identify underperforming content.
+2. Functional Requirements
+Core Features:
+
+Dashboarding: Real-time insights into key metrics like viewership trends, average watch times, and engagement rates.
+Predictive Analytics: Machine learning models to forecast content success based on historical data.
+Audience Segmentation: Tools for creating demographic and behavioral audience profiles.
+Content Comparison: Comparative insights for similar titles to optimize licensing decisions.
+Exporting and Reporting: Support for custom report generation and CSV exports.
+Authentication Conditions & Frequency:
+
+Single Sign-On (SSO) with streaming platform accounts.
+Reauthentication required after 24 hours of inactivity.
+Two-factor authentication (2FA) for roles with access to sensitive data, e.g., financial metrics.
+Sensitivity of Actions & Permission Levels:
+
+High Sensitivity: Editing audience segmentation models or exporting data; accessible only to admins and analysts.
+Medium Sensitivity: Viewing engagement heatmaps; accessible to managers and analysts.
+Low Sensitivity: Accessing general dashboards; accessible to all authenticated users.
+3. Non-Functional Requirements
+Performance:
+
+Response time for analytics queries must not exceed 2 seconds for datasets under 10 million rows.
+The system should support 1,000 concurrent users during peak hours.
+Scalability:
+
+Capable of handling 50% user growth annually without performance degradation.
+Support for data scaling, up to 1 billion rows per streaming platform.
+Reliability:
+
+99.9% uptime SLA.
+Automatic failover mechanisms for regional outages.
+Security:
+
+AES-256 encryption for all stored data.
+Role-based access control (RBAC) with least-privilege principles.
+Usability:
+
+Intuitive drag-and-drop interface for non-technical users.
+WCAG 2.1 compliance for accessibility.
+Audit & Monitoring:
+
+Maintain detailed logs for all actions involving data export or model modification.
+Alert admins of suspicious login attempts or large data exports.
+4. Constraints
+Technical Constraints:
+
+Must integrate with AWS Redshift for backend data storage.
+Frontend tools limited to React and Node.js frameworks to align with the company's existing tech stack.
+Compliance Requirements:
+
+GDPR compliance for handling European user data.
+Adherence to MPAA guidelines for content security.
+Resource Constraints:
+
+Initial development budget capped at $2 million.
+Team size: 10 developers, 2 QA engineers, and 1 product manager.
+Integration Needs:
+
+Integration with existing subscription and user management systems of streaming platforms.
+API endpoints for connecting with third-party CRM tools like Salesforce.
+
+
+
+
+

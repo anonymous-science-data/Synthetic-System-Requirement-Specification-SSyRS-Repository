@@ -1,0 +1,89 @@
+
+Media and Entertainment Software System Scenario
+1. System Overview
+System Purpose:
+The system, "MediaTrack Pro," is designed to streamline content rights management and royalty tracking for production studios, broadcasters, and streaming platforms. It aims to ensure accurate royalty payments, reduce manual errors, and provide transparent reporting to stakeholders.
+
+Domain/Context:
+The system operates in the Media and Entertainment industry, focusing on content licensing, distribution, and revenue tracking for films, television, and digital media.
+
+Stakeholders:
+
+Production Studios: Manage rights for original and acquired content.
+Broadcasters and Streaming Platforms: Ensure compliance with licensing agreements and accurate royalty disbursements.
+Content Creators: Monitor royalties for their work.
+Legal and Compliance Teams: Verify adherence to licensing terms and intellectual property laws.
+User Base Characteristics:
+
+Size: Approximately 2,000 daily active users, including administrators, legal teams, and financial analysts.
+Diversity: Users from diverse professional backgrounds across production, finance, and compliance.
+Geographic Distribution: Primarily North America, Europe, and Asia, reflecting the global nature of media distribution.
+Operational Environment:
+MediaTrack Pro is a cloud-based solution hosted on Google Cloud Platform (GCP) for its global infrastructure capabilities and compliance support. It is accessible via web browsers and offers a mobile companion app for on-the-go access to reports and approvals.
+
+Usage Scenarios:
+
+A financial analyst uploads licensing terms for a new distribution deal.
+A content creator logs in to view their latest royalty payment breakdown.
+A compliance officer generates a report to audit adherence to licensing agreements.
+2. Functional Requirements
+Core Features:
+
+Content Rights Management: Track licensing terms, territories, and expiration dates.
+Royalty Calculation Engine: Automatically compute royalties based on revenue splits, tiered rates, or fixed fees.
+Reporting Tools: Generate detailed royalty and compliance reports.
+Notification System: Alerts for expiring licenses, payment due dates, and audit schedules.
+Integration API: Enable external systems to exchange data, such as financial platforms or customer relationship management (CRM) tools.
+Authentication Conditions & Frequency:
+
+Users authenticate via OAuth 2.0 with support for SSO and MFA.
+Sensitive actions, such as approving payments or modifying licensing terms, require reauthentication within the same session.
+Sensitivity of Actions & Permission Levels:
+
+High Sensitivity: Editing licensing terms or approving payments; restricted to administrators.
+Medium Sensitivity: Generating compliance reports; accessible to financial analysts and legal teams.
+Low Sensitivity: Viewing royalty summaries; available to content creators and general users.
+3. Non-Functional Requirements
+Performance:
+
+Royalty calculations for a standard deal must complete in under 2 seconds.
+Reports for datasets under 1 million rows should generate in under 5 seconds.
+Scalability:
+
+Support up to 5,000 users concurrently.
+Expand storage to accommodate 10TB of new content metadata annually.
+Reliability:
+
+Ensure 99.9% system uptime with automated failover support in case of regional outages.
+Daily backups and disaster recovery capabilities to restore operations within 2 hours of an incident.
+Security:
+
+Data encryption in transit and at rest using industry-standard protocols.
+Role-based access control (RBAC) with periodic access reviews.
+Usability:
+
+Intuitive dashboards with customizable widgets for different user roles.
+Compliance with WCAG 2.1 for accessibility.
+Audit & Monitoring:
+
+Track all user actions involving licensing modifications or royalty disbursements.
+Real-time anomaly detection to flag potential errors or fraud in royalty calculations.
+4. Constraints
+Technical Constraints:
+
+The system must be compatible with PostgreSQL for database operations.
+Frontend development limited to Angular due to internal expertise.
+Compliance Requirements:
+
+GDPR and CCPA compliance for handling personal data of global users.
+Adherence to IFRS standards for financial reporting.
+Resource Constraints:
+
+Development budget set at $2.5 million.
+Initial team of 15 developers, 4 QA engineers, and 3 financial domain experts.
+Integration Needs:
+
+Integration with SAP for financial processing and Salesforce for customer data.
+API endpoints for real-time royalty updates with third-party platforms.
+
+

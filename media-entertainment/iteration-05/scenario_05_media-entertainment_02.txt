@@ -1,0 +1,92 @@
+
+Media and Entertainment Software System Scenario
+1. System Overview
+System Purpose:
+The system, "Audience Catalyst," is designed to optimize advertising performance and content monetization for digital video platforms by providing AI-driven insights into audience behaviors and ad campaign effectiveness.
+
+Domain/Context:
+The platform operates within the Media and Entertainment industry, focusing on digital advertising analytics and content monetization strategies for streaming platforms, social media outlets, and content distribution networks.
+
+Stakeholders:
+
+Ad Operations Teams: Manage ad inventory and campaign configurations.
+Content Producers: Require insights to maximize monetization from their content.
+Media Buyers: Evaluate ad performance and refine future spending strategies.
+Platform Administrators: Oversee user access and system performance.
+User Base Characteristics:
+
+Size: Approximately 5,000 daily active users, including analysts, ad managers, and executives.
+Diversity: Global users across North America, Europe, and Asia, with roles varying from technical data users to high-level decision-makers.
+Geographic Distribution: Primarily urban regions with high internet penetration.
+Operational Environment:
+The system is hosted in a hybrid cloud environment, leveraging Microsoft Azure for high availability and scalability. It is accessible via web browsers and a mobile app tailored for quick campaign management.
+
+Usage Scenarios:
+
+An ad manager uploads creative assets and configures performance benchmarks for a new campaign.
+A data analyst generates a report on audience retention across multiple ad creatives.
+A content producer examines revenue trends for video content based on ad placements.
+2. Functional Requirements
+Core Features:
+
+Ad Campaign Analytics: Real-time performance metrics, including click-through rates (CTR), cost per acquisition (CPA), and revenue per mille (RPM).
+Audience Retention Tracking: Insights into viewer engagement with ads and content.
+Monetization Reports: Automated reports on ad revenue by content segment, geography, and audience demographics.
+AI-Driven Recommendations: Suggestions for optimal ad placements and campaign configurations.
+Customizable Dashboards: Personalizable interfaces for users to track key metrics.
+Authentication Conditions & Frequency:
+
+OAuth 2.0-based single sign-on (SSO) with multi-factor authentication (MFA) for all users.
+Reauthentication triggered after 12 hours of inactivity or access to sensitive reports.
+Sensitivity of Actions & Permission Levels:
+
+High Sensitivity: Exporting revenue reports or modifying campaign configurations; limited to admin and manager roles.
+Medium Sensitivity: Viewing AI recommendations or advanced analytics; accessible to analysts and managers.
+Low Sensitivity: Accessing basic dashboards or uploading creative assets; available to all authenticated users.
+3. Non-Functional Requirements
+Performance:
+
+Dashboard updates must occur within 1 second for datasets under 5 million records.
+API response times should not exceed 500ms under typical loads.
+Scalability:
+
+Support up to 10,000 simultaneous users with minimal latency.
+Scalable data storage to handle 1TB monthly growth in campaign performance data.
+Reliability:
+
+System uptime guarantee of 99.95%.
+Real-time replication across regions to ensure data availability during outages.
+Security:
+
+End-to-end encryption for all data in transit and at rest.
+Role-based access control (RBAC) with auditing of permissions changes.
+Usability:
+
+Simplified interfaces with tooltips and step-by-step onboarding guides for non-technical users.
+Accessibility compliance with WCAG 2.1 AA standards.
+Audit & Monitoring:
+
+Logging of all user actions, including logins, report exports, and data modifications.
+Real-time anomaly detection to identify suspicious activities, such as large-scale data exports.
+4. Constraints
+Technical Constraints:
+
+The system must integrate with existing content management systems (CMS) and advertising platforms like Google Ad Manager and Facebook Ads API.
+Must use PostgreSQL for the database due to existing organizational standards.
+Compliance Requirements:
+
+Adhere to GDPR and CCPA for user data handling.
+Compliance with IAB standards for digital advertising metrics.
+Resource Constraints:
+
+Development budget capped at $1.8 million.
+Team size includes 12 developers, 3 QA engineers, and 2 data scientists.
+Integration Needs:
+
+API integrations with third-party tools for campaign setup and data exchange.
+Seamless integration with cloud storage providers like AWS S3 for asset management.
+
+
+
+
+

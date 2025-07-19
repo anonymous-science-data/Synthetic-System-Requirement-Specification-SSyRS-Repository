@@ -1,0 +1,81 @@
+
+Media and Entertainment System Scenario
+1. System Overview
+System Purpose:
+The system, named StreamWorks Hub, is designed to provide an all-in-one platform for managing digital content licensing, distribution, and analytics for film studios and independent creators. Its primary goal is to streamline licensing agreements, enable automated content distribution across streaming platforms, and offer real-time insights into viewership and revenue performance.
+
+Domain/Context:
+The system operates within the Media and Entertainment industry, specifically targeting content creators, studios, and distributors in the digital streaming market.
+
+Stakeholders:
+
+Film Studios: Manage and distribute their catalog of titles.
+Independent Creators: Publish content and track monetization performance.
+Streaming Platforms: Integrate for automated ingestion of licensed content.
+Legal and Compliance Teams: Oversee contract adherence and licensing regulations.
+Analytics Teams: Analyze performance data for decision-making.
+User Base Characteristics:
+
+Size: Approximately 5,000 active users, with potential growth to 20,000 over five years.
+Diversity: Users range from small independent creators to large multinational studios.
+Geographic Distribution: Primarily North America, Europe, and Asia-Pacific, with plans for global expansion.
+Roles: System administrators, content managers, analytics specialists, and legal/compliance officers.
+2. Functional Requirements
+Core Features:
+
+Content Licensing Module: Tools for negotiating, drafting, and managing licensing agreements.
+Automated Distribution: Seamless content distribution to platforms like Netflix, Hulu, and Amazon Prime, adhering to regional availability restrictions.
+Real-Time Analytics: Dashboards for viewership metrics, revenue performance, and content popularity trends.
+Notifications: Alerts for expiring contracts, royalty payments, or system updates.
+Multi-language Support: Interfaces and workflows in English, Spanish, French, and Mandarin.
+Frequency of Authentication:
+Users authenticate once per session, with re-authentication required for accessing sensitive modules like financial reports or contract archives.
+
+Sensitivity of Actions:
+
+High Sensitivity: Financial data exports, contract modifications, and deletion of content (requires multi-factor authentication).
+Moderate Sensitivity: Viewing performance dashboards or basic content upload (requires role-based access).
+3. Non-Functional Requirements
+Performance:
+
+Average response time for analytics queries: <=2 seconds.
+Content upload throughput: Support up to 500 simultaneous uploads without degradation.
+Scalability:
+Must accommodate a 300% increase in users and a 500% growth in content volume within five years, with no significant impact on performance.
+
+Reliability:
+
+99.9% system uptime.
+Automatic failover and recovery within 30 seconds of server outages.
+Security:
+
+Data encryption (in transit and at rest).
+Granular role-based access control.
+Regular penetration testing and vulnerability assessments.
+Usability:
+
+Intuitive interfaces with minimal training required (target training duration: <=2 hours).
+Compliance with WCAG 2.1 standards for accessibility.
+4. Constraints
+Technical Constraints:
+
+Hosting on AWS infrastructure, with a preference for serverless architecture where feasible.
+Integration with existing DRM (Digital Rights Management) systems.
+Compliance Requirements:
+
+Adherence to GDPR, CCPA, and local content distribution regulations.
+Contract and data retention policies aligned with industry standards.
+Resource Constraints:
+
+Budget: $2.5M for development, with annual operational costs capped at $1M.
+Staffing: Limited to a development team of 12 engineers, 2 UX designers, and 1 project manager.
+Time: System MVP (Minimum Viable Product) must launch within 12 months.
+Integration Needs:
+
+Seamless integration with existing streaming platform APIs.
+Support for Single Sign-On (SSO) using corporate directories like Azure AD and Okta.
+
+
+
+
+
